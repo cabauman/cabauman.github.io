@@ -1,0 +1,1107 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+        <title>Rx Docs - API - System.Reactive.dll Assembly</title>
+        <link href="/assets/css/highlight.css" rel="stylesheet">
+        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/assets/css/override.css" rel="stylesheet">
+        <script src="/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>        
+        <script src="/assets/js/app.min.js"></script>         
+        <script src="/assets/js/highlight.pack.js"></script>   
+        <script src="/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/assets/js/mermaid.min.js"></script>
+        <script src="/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/assets/js/html5shiv.min.js"></script>
+        <script src="/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/" class="logo">
+                            <span>Rx Docs</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li><a href="/about">About This Project</a></li>
+        <li><a href="/docs">Docs</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li class="active"><a href="/api">API</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#ClassTypes">Class Types</a></p>
+<p><a href="#InterfaceTypes">Interface Types</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    	
+	    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/searchIndex.js"></script>
+    <div class="sidebar-form">
+        <div class="input-group">
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
+            <span class="input-group-btn">
+                <button class="btn btn-flat"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+    </div>
+    <div id="search-results">
+    </div>
+    <script>
+        function runSearch(query){
+            $("#search-results").empty();			
+            if( query.length < 2 ){
+                return;
+            }			
+            var results = searchModule.search("*" + query + "*");
+            var listHtml = "<ul class='sidebar-menu'>";	
+            listHtml += "<li class='header'>Type Results</li>";	
+            if(results.length == 0 ){
+                listHtml += "<li>No results found</li>";
+            } else {					
+                for(var i = 0; i < results.length; ++i){
+                    var res = results[i];
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
+                }				
+            }
+            listHtml += "</ul>";				
+            $("#search-results").append(listHtml);
+        }
+
+        $(document).ready(function(){
+            $("#search").on('input propertychange paste', function() {
+                runSearch($("#search").val());
+            });
+        });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
+    </script>
+	
+    <hr>
+
+                    <ul class="sidebar-menu">
+                        
+	<li class="header">Assemblies</li>   
+        <li class="selected"><a href="/api/System.Reactive.dll">System<wbr>.Reactive<wbr>.dll</a></li>
+
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+<section class="content-header">
+	<h1>System<wbr>.Reactive<wbr>.dll <small>Assembly</small></h1>
+</section>
+<section class="content">
+	
+	
+	
+
+			<h1 id="ClassTypes">Class Types</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover two-cols">
+						<thead>
+							<tr>
+								<th>Class</th>
+									<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/api/System.Reactive/AnonymousObservable_1">AnonymousObservable</a><wbr>&lt;<a href="/api/System.Reactive/AnonymousObservable_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Class to create an <code class="cs">System.IObservable`1</code> instance from a delegate-based implementation of the <code class="cs">System.IObservable`1.Subscribe(System.IObserver{`0})</code> method.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/AnonymousObserver_1">AnonymousObserver</a><wbr>&lt;<a href="/api/System.Reactive/AnonymousObserver_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Class to create an <code class="cs">System.IObserver`1</code> instance from delegate-based implementations of the On* methods.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/AsyncLock">AsyncLock</a></td>
+									<td>
+            Asynchronous lock.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Subjects/AsyncSubject_1">AsyncSubject</a><wbr>&lt;<a href="/api/System.Reactive.Subjects/AsyncSubject_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Represents the result of an asynchronous operation.
+            The last value before the OnCompleted notification, or the error received through OnError, is sent to all subscribed observers.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Subjects/BehaviorSubject_1">BehaviorSubject</a><wbr>&lt;<a href="/api/System.Reactive.Subjects/BehaviorSubject_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Represents a value that changes over time.
+            Observers can subscribe to the subject to receive the last (or initial) value and all subsequent notifications.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Disposables/BooleanDisposable">BooleanDisposable</a></td>
+									<td>
+            Represents a disposable resource that can be checked for disposal status.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Disposables/CancellationDisposable">Cancellation<wbr>Disposable</a></td>
+									<td>
+            Represents a disposable resource that has an associated  that will be set to the cancellation requested state upon disposal.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Disposables/CompositeDisposable">CompositeDisposable</a></td>
+									<td>
+            Represents a group of disposable resources that are disposed together.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Disposables/ContextDisposable">ContextDisposable</a></td>
+									<td>
+            Represents a disposable resource whose disposal invocation will be posted to the specified .
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/CurrentPlatformEnlightenmentProvider">Current<wbr>Platform<wbr>Enlightenment<wbr>Provider</a></td>
+									<td>
+            (Infrastructure) Provider for platform-specific framework enlightenments.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/CurrentThreadScheduler">Current<wbr>Thread<wbr>Scheduler</a></td>
+									<td>
+            Represents an object that schedules units of work on the current thread.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/DefaultScheduler">DefaultScheduler</a></td>
+									<td>
+            Represents an object that schedules units of work on the platform's default scheduler.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/DefaultSystemClock">DefaultSystemClock</a></td>
+									<td>
+            (Infrastructure) Provides access to the local system clock.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Disposables/Disposable">Disposable</a></td>
+									<td>
+            Provides a set of static methods for creating <code class="cs">System.IDisposable</code> objects.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/EnlightenmentProvider">Enlightenment<wbr>Provider</a></td>
+									<td>
+            Provides access to the platform enlightenments used by other Rx libraries to improve system performance and
+            runtime efficiency. While Rx can run without platform enlightenments loaded, it's recommended to deploy the
+            System.Reactive.PlatformServices assembly with your application and call <code class="cs"><a href="/api/System.Reactive.PlatformServices/EnlightenmentProvider/33AB9D47">EnsureLoaded()</a></code> during
+            application startup to ensure enlightenments are properly loaded.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/EventLoopScheduler">EventLoopScheduler</a></td>
+									<td>
+            Represents an object that schedules units of work on a designated thread.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/EventPattern_1">EventPattern</a><wbr>&lt;<a href="/api/System.Reactive/EventPattern_1#typeparam-TEventArgs">TEventArgs</a>&gt;<wbr></td>
+									<td>
+            Represents a .NET event invocation consisting of the weakly typed object that raised the event and the data that was generated by the event.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/EventPattern_2">EventPattern</a><wbr>&lt;<a href="/api/System.Reactive/EventPattern_2#typeparam-TSender">TSender</a>, <wbr><a href="/api/System.Reactive/EventPattern_2#typeparam-TEventArgs">TEventArgs</a>&gt;<wbr></td>
+									<td>
+            Represents a .NET event invocation consisting of the strongly typed object that raised the event and the data that was generated by the event.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/EventPatternSourceBase_2">Event<wbr>Pattern<wbr>Source<wbr>Base</a><wbr>&lt;<a href="/api/System.Reactive/EventPatternSourceBase_2#typeparam-TSender">TSender</a>, <wbr><a href="/api/System.Reactive/EventPatternSourceBase_2#typeparam-TEventArgs">TEventArgs</a>&gt;<wbr></td>
+									<td>
+            Base class for classes that expose an observable sequence as a well-known event pattern (sender, event arguments).
+            Contains functionality to maintain a map of event handler delegates to observable sequence subscriptions. Subclasses
+            should only add an event with custom add and remove methods calling into the base class's operations.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/ExperimentalAttribute">Experimental<wbr>Attribute</a></td>
+									<td>
+            Marks the program elements that are experimental. This class cannot be inherited.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/HistoricalScheduler">HistoricalScheduler</a></td>
+									<td>
+            Provides a virtual time scheduler that uses <code class="cs">System.DateTimeOffset</code> for absolute time and <code class="cs">System.TimeSpan</code> for relative time.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/HistoricalSchedulerBase">Historical<wbr>Scheduler<wbr>Base</a></td>
+									<td>
+            Base class for historical schedulers, which are virtual time schedulers that use <code class="cs">System.DateTimeOffset</code> for absolute time and <code class="cs">System.TimeSpan</code> for relative time.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/HostLifecycleService">HostLifecycleService</a></td>
+									<td>
+            (Infrastructure) Provides access to the host's lifecycle management services.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/HostResumingEventArgs">Host<wbr>Resuming<wbr>Event<wbr>Args</a></td>
+									<td>
+            (Infrastructure) Event arguments for host resumption events.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/HostSuspendingEventArgs">Host<wbr>Suspending<wbr>Event<wbr>Args</a></td>
+									<td>
+            (Infrastructure) Event arguments for host suspension events.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/ImmediateScheduler">ImmediateScheduler</a></td>
+									<td>
+            Represents an object that schedules units of work to run immediately on the current thread.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/ListObservable_1">ListObservable</a><wbr>&lt;<a href="/api/System.Reactive/ListObservable_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Represents an object that retains the elements of the observable sequence and signals the end of the sequence.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/LocalQueryMethodImplementationTypeAttribute">Local<wbr>Query<wbr>Method<wbr>Implementation<wbr>Type<wbr>Attribute</a></td>
+									<td>
+            Attribute applied to static classes providing expression tree forms of query methods,
+            mapping those to the corresponding methods for local query execution on the specified
+            target class type.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/LocalScheduler">LocalScheduler</a></td>
+									<td>
+            Abstract base class for machine-local schedulers, using the local system clock for time-based operations.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Disposables/MultipleAssignmentDisposable">Multiple<wbr>Assignment<wbr>Disposable</a></td>
+									<td>
+            Represents a disposable resource whose underlying disposable resource can be swapped for another disposable resource.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/NewThreadScheduler">NewThreadScheduler</a></td>
+									<td>
+            Represents an object that schedules each unit of work on a separate thread.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/Notification">Notification</a></td>
+									<td>
+            Provides a set of static methods for constructing notifications.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/Notification_1">Notification</a><wbr>&lt;<a href="/api/System.Reactive/Notification_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Represents a notification to an observer.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/NotificationKind">NotificationKind</a></td>
+									<td>
+            Indicates the type of a notification.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/Observable">Observable</a></td>
+									<td>
+            Provides a set of static methods for writing in-memory queries over observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/ObservableBase_1">ObservableBase</a><wbr>&lt;<a href="/api/System.Reactive/ObservableBase_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Abstract base class for implementations of the <code class="cs">System.IObservable`1</code> interface.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/ObservableEx">ObservableEx</a></td>
+									<td>
+            Provides a set of static methods for writing in-memory queries over observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System/ObservableExtensions">ObservableExtensions</a></td>
+									<td>
+            Provides a set of static methods for subscribing delegates to observables.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/Observer">Observer</a></td>
+									<td>
+            Provides a set of static methods for creating observers.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/ObserverBase_1">ObserverBase</a><wbr>&lt;<a href="/api/System.Reactive/ObserverBase_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Abstract base class for implementations of the <code class="cs">System.IObserver`1</code> interface.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern">Pattern</a></td>
+									<td>
+            Abstract base class for join patterns.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_16">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource10">TSource10</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource11">TSource11</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource12">TSource12</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource13">TSource13</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource14">TSource14</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource15">TSource15</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_16#typeparam-TSource16">TSource16</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over sixteen observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_15">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource10">TSource10</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource11">TSource11</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource12">TSource12</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource13">TSource13</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource14">TSource14</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_15#typeparam-TSource15">TSource15</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over fifteen observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_14">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource10">TSource10</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource11">TSource11</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource12">TSource12</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource13">TSource13</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_14#typeparam-TSource14">TSource14</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over fourteen observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_13">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource10">TSource10</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource11">TSource11</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource12">TSource12</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_13#typeparam-TSource13">TSource13</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over thirteen observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_12">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_12#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_12#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_12#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_12#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_12#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_12#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_12#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_12#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_12#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_12#typeparam-TSource10">TSource10</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_12#typeparam-TSource11">TSource11</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_12#typeparam-TSource12">TSource12</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over twelve observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_11">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_11#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_11#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_11#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_11#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_11#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_11#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_11#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_11#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_11#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_11#typeparam-TSource10">TSource10</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_11#typeparam-TSource11">TSource11</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over eleven observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_10">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_10#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_10#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_10#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_10#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_10#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_10#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_10#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_10#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_10#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_10#typeparam-TSource10">TSource10</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over ten observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_9">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_9#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_9#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_9#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_9#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_9#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_9#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_9#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_9#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_9#typeparam-TSource9">TSource9</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over nine observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_8">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_8#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_8#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_8#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_8#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_8#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_8#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_8#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_8#typeparam-TSource8">TSource8</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over eight observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_7">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_7#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_7#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_7#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_7#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_7#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_7#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_7#typeparam-TSource7">TSource7</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over seven observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_6">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_6#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_6#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_6#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_6#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_6#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_6#typeparam-TSource6">TSource6</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over six observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_5">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_5#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_5#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_5#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_5#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_5#typeparam-TSource5">TSource5</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over five observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_4">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_4#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_4#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_4#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_4#typeparam-TSource4">TSource4</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over four observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_3">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_3#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_3#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_3#typeparam-TSource3">TSource3</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over three observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_2">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_2#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/Pattern_2#typeparam-TSource2">TSource2</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over two observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Pattern_1">Pattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Pattern_1#typeparam-TSource1">TSource1</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over one observable sequence.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/PeriodicTimerSystemClockMonitor">Periodic<wbr>Timer<wbr>System<wbr>Clock<wbr>Monitor</a></td>
+									<td>
+            (Infrastructure) Monitors for system clock changes based on a periodic timer.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/Plan_1">Plan</a><wbr>&lt;<a href="/api/System.Reactive.Joins/Plan_1#typeparam-TResult">TResult</a>&gt;<wbr></td>
+									<td>
+            Represents an execution plan for join patterns.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/PlatformEnlightenmentProvider">Platform<wbr>Enlightenment<wbr>Provider</a></td>
+									<td>
+            (Infrastructure) Provider for platform-specific framework enlightenments.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/Qbservable">Qbservable</a></td>
+									<td>
+            Provides a set of static methods for writing queries over observable sequences, allowing translation to a target query language.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/QbservableEx">QbservableEx</a></td>
+									<td>
+            Provides a set of static methods for writing queries over observable sequences, allowing translation to a target query language.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/QueryDebugger">QueryDebugger</a></td>
+									<td>
+            (Infrastructure) Implement query debugger services.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern">QueryablePattern</a></td>
+									<td>
+            Abstract base class for join patterns represented by an expression tree.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_16">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource10">TSource10</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource11">TSource11</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource12">TSource12</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource13">TSource13</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource14">TSource14</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource15">TSource15</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_16#typeparam-TSource16">TSource16</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over sixteen observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_15">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource10">TSource10</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource11">TSource11</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource12">TSource12</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource13">TSource13</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource14">TSource14</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_15#typeparam-TSource15">TSource15</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over fifteen observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_14">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource10">TSource10</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource11">TSource11</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource12">TSource12</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource13">TSource13</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_14#typeparam-TSource14">TSource14</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over fourteen observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_13">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource10">TSource10</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource11">TSource11</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource12">TSource12</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_13#typeparam-TSource13">TSource13</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over thirteen observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_12">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_12#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_12#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_12#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_12#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_12#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_12#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_12#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_12#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_12#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_12#typeparam-TSource10">TSource10</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_12#typeparam-TSource11">TSource11</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_12#typeparam-TSource12">TSource12</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over twelve observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_11">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_11#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_11#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_11#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_11#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_11#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_11#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_11#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_11#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_11#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_11#typeparam-TSource10">TSource10</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_11#typeparam-TSource11">TSource11</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over eleven observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_10">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_10#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_10#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_10#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_10#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_10#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_10#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_10#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_10#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_10#typeparam-TSource9">TSource9</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_10#typeparam-TSource10">TSource10</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over ten observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_9">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_9#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_9#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_9#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_9#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_9#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_9#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_9#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_9#typeparam-TSource8">TSource8</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_9#typeparam-TSource9">TSource9</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over nine observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_8">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_8#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_8#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_8#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_8#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_8#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_8#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_8#typeparam-TSource7">TSource7</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_8#typeparam-TSource8">TSource8</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over eight observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_7">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_7#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_7#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_7#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_7#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_7#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_7#typeparam-TSource6">TSource6</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_7#typeparam-TSource7">TSource7</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over seven observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_6">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_6#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_6#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_6#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_6#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_6#typeparam-TSource5">TSource5</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_6#typeparam-TSource6">TSource6</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over six observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_5">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_5#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_5#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_5#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_5#typeparam-TSource4">TSource4</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_5#typeparam-TSource5">TSource5</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over five observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_4">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_4#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_4#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_4#typeparam-TSource3">TSource3</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_4#typeparam-TSource4">TSource4</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over four observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_3">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_3#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_3#typeparam-TSource2">TSource2</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_3#typeparam-TSource3">TSource3</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over three observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePattern_2">QueryablePattern</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePattern_2#typeparam-TSource1">TSource1</a>, <wbr><a href="/api/System.Reactive.Joins/QueryablePattern_2#typeparam-TSource2">TSource2</a>&gt;<wbr></td>
+									<td>
+            Represents a join pattern over two observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Joins/QueryablePlan_1">QueryablePlan</a><wbr>&lt;<a href="/api/System.Reactive.Joins/QueryablePlan_1#typeparam-TResult">TResult</a>&gt;<wbr></td>
+									<td>
+            Represents an execution plan for join patterns represented by an expression tree.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Disposables/RefCountDisposable">RefCountDisposable</a></td>
+									<td>
+            Represents a disposable resource that only disposes its underlying disposable resource when all <code class="cs"><a href="/api/System.Reactive.Disposables/RefCountDisposable/4543C9AD">GetDisposable()</a></code> have been disposed.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Subjects/ReplaySubject_1">ReplaySubject</a><wbr>&lt;<a href="/api/System.Reactive.Subjects/ReplaySubject_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Represents an object that is both an observable sequence as well as an observer.
+            Each notification is broadcasted to all subscribed and future observers, subject to buffer trimming policies.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Disposables/ScheduledDisposable">ScheduledDisposable</a></td>
+									<td>
+            Represents a disposable resource whose disposal invocation will be scheduled on the specified .
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/ScheduledItem_2">ScheduledItem</a><wbr>&lt;<a href="/api/System.Reactive.Concurrency/ScheduledItem_2#typeparam-TAbsolute">TAbsolute</a>, <wbr><a href="/api/System.Reactive.Concurrency/ScheduledItem_2#typeparam-TValue">TValue</a>&gt;<wbr></td>
+									<td>
+            Represents a scheduled work item based on the materialization of an IScheduler.Schedule method call.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/ScheduledItem_1">ScheduledItem</a><wbr>&lt;<a href="/api/System.Reactive.Concurrency/ScheduledItem_1#typeparam-TAbsolute">TAbsolute</a>&gt;<wbr></td>
+									<td>
+            Abstract base class for scheduled work items.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/Scheduler">Scheduler</a></td>
+									<td>
+            Provides a set of static properties to access commonly used schedulers.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/SchedulerOperation">SchedulerOperation</a></td>
+									<td>
+            Represents an awaitable scheduler operation. Awaiting the object causes the continuation to be posted back to the originating scheduler's work queue.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/SchedulerOperationAwaiter">Scheduler<wbr>Operation<wbr>Awaiter</a></td>
+									<td>
+            (Infrastructure) Scheduler operation awaiter type used by the code generated for C# await and Visual Basic Await expressions.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/SchedulerQueue_1">SchedulerQueue</a><wbr>&lt;<a href="/api/System.Reactive.Concurrency/SchedulerQueue_1#typeparam-TAbsolute">TAbsolute</a>&gt;<wbr></td>
+									<td>
+            Efficient scheduler queue that maintains scheduled items sorted by absolute time.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Disposables/SerialDisposable">SerialDisposable</a></td>
+									<td>
+            Represents a disposable resource whose underlying disposable resource can be replaced by another disposable resource, causing automatic disposal of the previous underlying disposable resource.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Disposables/SingleAssignmentDisposable">Single<wbr>Assignment<wbr>Disposable</a></td>
+									<td>
+            Represents a disposable resource which only allows a single assignment of its underlying disposable resource.
+            If an underlying disposable resource has already been set, future attempts to set the underlying disposable resource will throw an <code class="cs">System.InvalidOperationException</code>.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Disposables/StableCompositeDisposable">Stable<wbr>Composite<wbr>Disposable</a></td>
+									<td>
+            Represents a group of disposable resources that are disposed together.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Subjects/Subject">Subject</a></td>
+									<td>
+            Provides a set of static methods for creating subjects.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Subjects/Subject_1">Subject</a><wbr>&lt;<a href="/api/System.Reactive.Subjects/Subject_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Represents an object that is both an observable sequence as well as an observer.
+            Each notification is broadcasted to all subscribed observers.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Subjects/SubjectBase_1">SubjectBase</a><wbr>&lt;<a href="/api/System.Reactive.Subjects/SubjectBase_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Base class for objects that are both an observable sequence as well as an observer.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/Synchronization">Synchronization</a></td>
+									<td>
+            Provides basic synchronization and scheduling services for observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/SynchronizationContextScheduler">Synchronization<wbr>Context<wbr>Scheduler</a></td>
+									<td>
+            Represents an object that schedules units of work on a provided .
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/SystemClock">SystemClock</a></td>
+									<td>
+            (Infrastructure) Provides access to local system clock services.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/SystemClockChangedEventArgs">System<wbr>Clock<wbr>Changed<wbr>Event<wbr>Args</a></td>
+									<td>
+            (Infrastructure) Event arguments for system clock change notifications.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Threading.Tasks/TaskObservableExtensions">Task<wbr>Observable<wbr>Extensions</a></td>
+									<td>
+            Provides a set of static methods for converting tasks to observable sequences.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Runtime.CompilerServices/TaskObservableMethodBuilder_1">Task<wbr>Observable<wbr>Method<wbr>Builder</a><wbr>&lt;<a href="/api/System.Runtime.CompilerServices/TaskObservableMethodBuilder_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Represents a builder for asynchronous methods that return a task-like <code class="cs"><a href="/api/System.Reactive/ITaskObservable_1">ITaskObservable&lt;T&gt;</a></code>.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/TaskPoolScheduler">TaskPoolScheduler</a></td>
+									<td>
+            Represents an object that schedules units of work on the Task Parallel Library (TPL) task pool.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/ThreadPoolScheduler">ThreadPoolScheduler</a></td>
+									<td>
+            Represents an object that schedules units of work on the CLR thread pool.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/TimeInterval_1">TimeInterval</a><wbr>&lt;<a href="/api/System.Reactive/TimeInterval_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Represents a value associated with time interval information.
+            The time interval can represent the time it took to produce the value, the interval relative to a previous value, the value's delivery time relative to a base, etc.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/Timestamped">Timestamped</a></td>
+									<td>
+            A helper class with a factory method for creating <code class="cs"><a href="/api/System.Reactive/Timestamped_1">Timestamped&lt;T&gt;</a></code> instances.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/Timestamped_1">Timestamped</a><wbr>&lt;<a href="/api/System.Reactive/Timestamped_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Represents value with a timestamp on it.
+            The timestamp typically represents the time the value was received, using an IScheduler's clock to obtain the current time.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/Unit">Unit</a></td>
+									<td>
+            Represents a type with a single value. This type is often used to denote the successful completion of a void-returning method (C#) or a Sub procedure (Visual Basic).
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/VirtualTimeScheduler_2">VirtualTimeScheduler</a><wbr>&lt;<a href="/api/System.Reactive.Concurrency/VirtualTimeScheduler_2#typeparam-TAbsolute">TAbsolute</a>, <wbr><a href="/api/System.Reactive.Concurrency/VirtualTimeScheduler_2#typeparam-TRelative">TRelative</a>&gt;<wbr></td>
+									<td>
+            Base class for virtual time schedulers using a priority queue for scheduled items.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/VirtualTimeSchedulerBase_2">Virtual<wbr>Time<wbr>Scheduler<wbr>Base</a><wbr>&lt;<a href="/api/System.Reactive.Concurrency/VirtualTimeSchedulerBase_2#typeparam-TAbsolute">TAbsolute</a>, <wbr><a href="/api/System.Reactive.Concurrency/VirtualTimeSchedulerBase_2#typeparam-TRelative">TRelative</a>&gt;<wbr></td>
+									<td>
+            Base class for virtual time schedulers.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/VirtualTimeSchedulerExtensions">Virtual<wbr>Time<wbr>Scheduler<wbr>Extensions</a></td>
+									<td>
+            Provides a set of extension methods for virtual time scheduling.
+            </td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+			<h1 id="InterfaceTypes">Interface Types</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover two-cols">
+						<thead>
+							<tr>
+								<th>Interface</th>
+									<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/api/System.Reactive.Disposables/ICancelable">ICancelable</a></td>
+									<td>
+            Disposable resource with disposal state tracking.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/IConcurrencyAbstractionLayer">I<wbr>Concurrency<wbr>Abstraction<wbr>Layer</a></td>
+									<td>
+            (Infrastructure) Concurrency abstraction layer interface.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Subjects/IConnectableObservable_1">I<wbr>Connectable<wbr>Observable</a><wbr>&lt;<a href="/api/System.Reactive.Subjects/IConnectableObservable_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Represents an observable wrapper that can be connected and disconnected from its underlying observable sequence.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/IEventPattern_2">IEventPattern</a><wbr>&lt;<a href="/api/System.Reactive/IEventPattern_2#typeparam-TSender">TSender</a>, <wbr><a href="/api/System.Reactive/IEventPattern_2#typeparam-TEventArgs">TEventArgs</a>&gt;<wbr></td>
+									<td>
+            Represents a .NET event invocation consisting of the strongly typed object that raised the event and the data that was generated by the event.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/IEventPatternSource_1">IEventPatternSource</a><wbr>&lt;<a href="/api/System.Reactive/IEventPatternSource_1#typeparam-TEventArgs">TEventArgs</a>&gt;<wbr></td>
+									<td>
+            Represents a data stream signaling its elements by means of an event.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/IEventSource_1">IEventSource</a><wbr>&lt;<a href="/api/System.Reactive/IEventSource_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Represents a data stream signaling its elements by means of an event.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/IExceptionServices">IExceptionServices</a></td>
+									<td>
+            (Infrastructure) Services to rethrow exceptions.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/IGroupedObservable_2">IGroupedObservable</a><wbr>&lt;<a href="/api/System.Reactive.Linq/IGroupedObservable_2#typeparam-TKey">TKey</a>, <wbr><a href="/api/System.Reactive.Linq/IGroupedObservable_2#typeparam-TElement">TElement</a>&gt;<wbr></td>
+									<td>
+            Represents an observable sequence of elements that have a common key.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/IHostLifecycleNotifications">I<wbr>Host<wbr>Lifecycle<wbr>Notifications</a></td>
+									<td>
+            (Infrastructure) Provides notifications about the host's lifecycle events.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/INotifySystemClockChanged">I<wbr>Notify<wbr>System<wbr>Clock<wbr>Changed</a></td>
+									<td>
+            (Infrastructure) Provides a mechanism to notify local schedulers about system clock changes.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/IObserver_2">IObserver</a><wbr>&lt;<a href="/api/System.Reactive/IObserver_2#typeparam-TValue">TValue</a>, <wbr><a href="/api/System.Reactive/IObserver_2#typeparam-TResult">TResult</a>&gt;<wbr></td>
+									<td>
+            Provides a mechanism for receiving push-based notifications and returning a response.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/IPlatformEnlightenmentProvider">I<wbr>Platform<wbr>Enlightenment<wbr>Provider</a></td>
+									<td>
+            (Infrastructure) Interface for enlightenment providers.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/IQbservable">IQbservable</a></td>
+									<td>
+            Provides functionality to evaluate queries against a specific data source wherein the type of the data is not specified.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/IQbservable_1">IQbservable</a><wbr>&lt;<a href="/api/System.Reactive.Linq/IQbservable_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Provides functionality to evaluate queries against a specific data source wherein the type of the data is known.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/IQbservableProvider">IQbservableProvider</a></td>
+									<td>
+            Defines methods to create and execute queries that are described by an IQbservable object.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/IScheduledItem_1">IScheduledItem</a><wbr>&lt;<a href="/api/System.Reactive.Concurrency/IScheduledItem_1#typeparam-TAbsolute">TAbsolute</a>&gt;<wbr></td>
+									<td>
+            Represents a work item that has been scheduled.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/IScheduler">IScheduler</a></td>
+									<td>
+            Represents an object that schedules units of work.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/ISchedulerLongRunning">I<wbr>Scheduler<wbr>Long<wbr>Running</a></td>
+									<td>
+            Scheduler with support for starting long-running tasks.
+            This type of scheduler can be used to run loops more efficiently instead of using recursive scheduling.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/ISchedulerPeriodic">ISchedulerPeriodic</a></td>
+									<td>
+            Scheduler with support for running periodic tasks.
+            This type of scheduler can be used to run timers more efficiently instead of using recursive scheduling.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/IStopwatch">IStopwatch</a></td>
+									<td>
+            Abstraction for a stopwatch to compute time relative to a starting point.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Concurrency/IStopwatchProvider">IStopwatchProvider</a></td>
+									<td>
+            Provider for <code class="cs"><a href="/api/System.Reactive.Concurrency/IStopwatch">IStopwatch</a></code> objects.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Subjects/ISubject_1">ISubject</a><wbr>&lt;<a href="/api/System.Reactive.Subjects/ISubject_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Represents an object that is both an observable sequence as well as an observer.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Subjects/ISubject_2">ISubject</a><wbr>&lt;<a href="/api/System.Reactive.Subjects/ISubject_2#typeparam-TSource">TSource</a>, <wbr><a href="/api/System.Reactive.Subjects/ISubject_2#typeparam-TResult">TResult</a>&gt;<wbr></td>
+									<td>
+            Represents an object that is both an observable sequence as well as an observer.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.PlatformServices/ISystemClock">ISystemClock</a></td>
+									<td>
+            (Infrastructure) Provides access to the local system clock.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/ITaskObservable_1">ITaskObservable</a><wbr>&lt;<a href="/api/System.Reactive/ITaskObservable_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Extension of the <code class="cs">System.IObservable`1</code> interface compatible with async method return types.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive/ITaskObservableAwaiter_1">I<wbr>Task<wbr>Observable<wbr>Awaiter</a><wbr>&lt;<a href="/api/System.Reactive/ITaskObservableAwaiter_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>
+            Interface representing an awaiter for an <code class="cs"><a href="/api/System.Reactive/ITaskObservable_1">ITaskObservable&lt;T&gt;</a></code>.
+            </td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+	
+</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="https://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>

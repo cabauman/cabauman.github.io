@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+        <title>Rx Docs - API - QbservableEx.Zip&lt;TFirst, TSecond, TThird, TFourth, TFifth&gt;(IQbservable&lt;TFirst&gt;, IObservable&lt;TSecond&gt;, IObservable&lt;TThird&gt;, IObservable&lt;TFourth&gt;, IObservable&lt;TFifth&gt;) Method</title>
+        <link href="/assets/css/highlight.css" rel="stylesheet">
+        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/assets/css/override.css" rel="stylesheet">
+        <script src="/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>        
+        <script src="/assets/js/app.min.js"></script>         
+        <script src="/assets/js/highlight.pack.js"></script>   
+        <script src="/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/assets/js/mermaid.min.js"></script>
+        <script src="/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/assets/js/html5shiv.min.js"></script>
+        <script src="/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/" class="logo">
+                            <span>Rx Docs</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li><a href="/about">About This Project</a></li>
+        <li><a href="/docs">Docs</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li class="active"><a href="/api">API</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
+<p><a href="#Syntax">Syntax</a></p>
+<p><a href="#TypeParameters">Type Parameters</a></p>
+<p><a href="#Parameters">Parameters</a></p>
+<p><a href="#ReturnValue">Return Value</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    	
+	    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/searchIndex.js"></script>
+    <div class="sidebar-form">
+        <div class="input-group">
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
+            <span class="input-group-btn">
+                <button class="btn btn-flat"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+    </div>
+    <div id="search-results">
+    </div>
+    <script>
+        function runSearch(query){
+            $("#search-results").empty();			
+            if( query.length < 2 ){
+                return;
+            }			
+            var results = searchModule.search("*" + query + "*");
+            var listHtml = "<ul class='sidebar-menu'>";	
+            listHtml += "<li class='header'>Type Results</li>";	
+            if(results.length == 0 ){
+                listHtml += "<li>No results found</li>";
+            } else {					
+                for(var i = 0; i < results.length; ++i){
+                    var res = results[i];
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
+                }				
+            }
+            listHtml += "</ul>";				
+            $("#search-results").append(listHtml);
+        }
+
+        $(document).ready(function(){
+            $("#search").on('input propertychange paste', function() {
+                runSearch($("#search").val());
+            });
+        });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
+    </script>
+	
+    <hr>
+
+                    <ul class="sidebar-menu">
+                        
+			<li class="header">Assembly</li>
+		<li><a href="/api/System.Reactive.dll">System<wbr>.Reactive<wbr>.dll</a></li>
+		<li class="header">Namespace</li>
+		<li><a href="/api/System.Reactive.Linq">System<wbr>.Reactive<wbr>.Linq</a></li>
+		<li class="header">Type</li>
+		<li><a href="/api/System.Reactive.Linq/QbservableEx">QbservableEx</a></li>
+		<li role="separator" class="divider"></li>
+			<li class="header">Method Members</li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/865531D2">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/15D5AAFC">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/3FDF3B7C">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/941D9308">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/F5F82C56">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/8F5F6D4F">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/7DB96070">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/345E4FE0">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/11076787">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/D291E845">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth, <wbr>TEleventh&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEleventh&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/9BFBFE35">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth, <wbr>TEleventh, <wbr>TTwelfth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEleventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTwelfth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/FEA8068A">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth, <wbr>TEleventh, <wbr>TTwelfth, <wbr>TThirteenth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEleventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTwelfth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThirteenth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/3AD9F298">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth, <wbr>TEleventh, <wbr>TTwelfth, <wbr>TThirteenth, <wbr>TFourteenth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEleventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTwelfth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThirteenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourteenth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/127EC534">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth, <wbr>TEleventh, <wbr>TTwelfth, <wbr>TThirteenth, <wbr>TFourteenth, <wbr>TFifteenth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEleventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTwelfth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThirteenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourteenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifteenth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/F8E88A4D">CombineLatest<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth, <wbr>TEleventh, <wbr>TTwelfth, <wbr>TThirteenth, <wbr>TFourteenth, <wbr>TFifteenth, <wbr>TSixteenth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEleventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTwelfth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThirteenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourteenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifteenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixteenth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/F5BCE75B">Create<wbr>(<wbr>I<wbr>Qbservable<wbr>Provider, <wbr>Expression<wbr>&lt;Func<wbr>&lt;IEnumerable<wbr>&lt;IObservable<wbr>&lt;object&gt;<wbr>&gt;<wbr>&gt;<wbr>&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/14EA02DD">Create<wbr>&lt;TResult&gt;<wbr><wbr>(<wbr>I<wbr>Qbservable<wbr>Provider, <wbr>Expression<wbr>&lt;Func<wbr>&lt;IObserver<wbr>&lt;TResult&gt;<wbr>, <wbr>IEnumerable<wbr>&lt;IObservable<wbr>&lt;object&gt;<wbr>&gt;<wbr>&gt;<wbr>&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/44A3AC45">Expand<wbr>&lt;TSource&gt;<wbr><wbr>(IQbservable<wbr>&lt;TSource&gt;<wbr>, <wbr>Expression<wbr>&lt;Func<wbr>&lt;TSource, <wbr>IObservable<wbr>&lt;TSource&gt;<wbr>&gt;<wbr>&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/9FB561D8">Expand<wbr>&lt;TSource&gt;<wbr><wbr>(IQbservable<wbr>&lt;TSource&gt;<wbr>, <wbr>Expression<wbr>&lt;Func<wbr>&lt;TSource, <wbr>IObservable<wbr>&lt;TSource&gt;<wbr>&gt;<wbr>&gt;<wbr>, <wbr>IScheduler)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/A707FCB5">ForkJoin<wbr>&lt;TSource&gt;<wbr><wbr>(<wbr>I<wbr>Qbservable<wbr>Provider, <wbr>IObservable<wbr>&lt;TSource&gt;<wbr>[])<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/EA880F64">ForkJoin<wbr>&lt;TSource&gt;<wbr><wbr>(<wbr>I<wbr>Qbservable<wbr>Provider, <wbr>IEnumerable<wbr>&lt;IObservable<wbr>&lt;TSource&gt;<wbr>&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/F41D76C9">ForkJoin<wbr>&lt;TSource1, <wbr>TSource2, <wbr>TResult&gt;<wbr><wbr>(IQbservable<wbr>&lt;TSource1&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSource2&gt;<wbr>, <wbr>Expression<wbr>&lt;Func<wbr>&lt;TSource1, <wbr>TSource2, <wbr>TResult&gt;<wbr>&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/EC4BA3D1">Let<wbr>&lt;TSource, <wbr>TResult&gt;<wbr><wbr>(IQbservable<wbr>&lt;TSource&gt;<wbr>, <wbr>Expression<wbr>&lt;Func<wbr>&lt;IObservable<wbr>&lt;TSource&gt;<wbr>, <wbr>IObservable<wbr>&lt;TResult&gt;<wbr>&gt;<wbr>&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/AF9AD13D">ManySelect<wbr>&lt;TSource, <wbr>TResult&gt;<wbr><wbr>(IQbservable<wbr>&lt;TSource&gt;<wbr>, <wbr>Expression<wbr>&lt;Func<wbr>&lt;IObservable<wbr>&lt;TSource&gt;<wbr>, <wbr>TResult&gt;<wbr>&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/3D9F29BE">ManySelect<wbr>&lt;TSource, <wbr>TResult&gt;<wbr><wbr>(IQbservable<wbr>&lt;TSource&gt;<wbr>, <wbr>Expression<wbr>&lt;Func<wbr>&lt;IObservable<wbr>&lt;TSource&gt;<wbr>, <wbr>TResult&gt;<wbr>&gt;<wbr>, <wbr>IScheduler)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/85DFD7C7">WithLatestFrom<wbr>&lt;TFirst, <wbr>TSecond&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/228C07DC">Zip<wbr>&lt;TFirst, <wbr>TSecond&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IEnumerable<wbr>&lt;TSecond&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/816A26AB">Zip<wbr>&lt;TFirst, <wbr>TSecond&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/1237EEE6">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/49B633B0">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>)<wbr></a></li>
+				<li class="selected"><a href="/api/System.Reactive.Linq/QbservableEx/F37330CB">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/44C32416">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/BBD5253A">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/EDFC83A8">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/571078D0">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/C43A23A9">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/62D6E6A8">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth, <wbr>TEleventh&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEleventh&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/0F7EAC75">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth, <wbr>TEleventh, <wbr>TTwelfth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEleventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTwelfth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/98957C02">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth, <wbr>TEleventh, <wbr>TTwelfth, <wbr>TThirteenth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEleventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTwelfth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThirteenth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/DC42655E">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth, <wbr>TEleventh, <wbr>TTwelfth, <wbr>TThirteenth, <wbr>TFourteenth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEleventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTwelfth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThirteenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourteenth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/E9FDFBCA">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth, <wbr>TEleventh, <wbr>TTwelfth, <wbr>TThirteenth, <wbr>TFourteenth, <wbr>TFifteenth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEleventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTwelfth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThirteenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourteenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifteenth&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/System.Reactive.Linq/QbservableEx/242F683E">Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth, <wbr>TSixth, <wbr>TSeventh, <wbr>TEighth, <wbr>TNinth, <wbr>TTenth, <wbr>TEleventh, <wbr>TTwelfth, <wbr>TThirteenth, <wbr>TFourteenth, <wbr>TFifteenth, <wbr>TSixteenth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSeventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEighth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TNinth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TEleventh&gt;<wbr>, <wbr>IObservable<wbr>&lt;TTwelfth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThirteenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourteenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifteenth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSixteenth&gt;<wbr>)<wbr></a></li>
+
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+<section class="content-header">
+			<h3><a href="/api/System.Reactive.Linq/QbservableEx">QbservableEx</a>.</h3>
+	<h1>Zip<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth&gt;<wbr><wbr>(IQbservable<wbr>&lt;TFirst&gt;<wbr>, <wbr>IObservable<wbr>&lt;TSecond&gt;<wbr>, <wbr>IObservable<wbr>&lt;TThird&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFourth&gt;<wbr>, <wbr>IObservable<wbr>&lt;TFifth&gt;<wbr>)<wbr> <small>Method</small></h1>
+</section>
+<section class="content">
+	
+	
+		<h1 id="Summary">Summary</h1>
+	<div class="lead">
+            Merges the specified observable sequences into one observable sequence of tuple values whenever all of the observable sequences have produced an element at a corresponding index.
+            </div>
+
+		<div class="panel panel-default">
+  			<div class="panel-body">	
+				<dl class="dl-horizontal">	
+						<dt>Assembly</dt>
+						<dd><a href="/api/System.Reactive.dll">System<wbr>.Reactive<wbr>.dll</a></dd>
+						
+						<dt>Namespace</dt>
+						<dd><a href="/api/System.Reactive.Linq">System<wbr>.Reactive<wbr>.Linq</a></dd>
+					
+						<dt>Containing Type</dt>
+						<dd><a href="/api/System.Reactive.Linq/QbservableEx">QbservableEx</a></dd>		
+					
+				</dl>
+  			</div>
+		</div>
+
+	<h1 id="Syntax">Syntax</h1>
+	<pre><code>public static IQbservable&lt;ValueTuple&lt;TFirst, TSecond, TThird, TFourth, TFifth&gt;&gt; Zip&lt;TFirst, TSecond, TThird, TFourth, TFifth&gt;(this IQbservable&lt;TFirst&gt; first, IObservable&lt;TSecond&gt; second, IObservable&lt;TThird&gt; third, IObservable&lt;TFourth&gt; fourth, IObservable&lt;TFifth&gt; fifth)</code></pre>
+
+
+
+
+	<h1 id="TypeParameters">Type Parameters</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover two-cols">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr id="typeparam-TFirst">
+						<td>TFirst</td>
+						<td>The type of the elements in the first source sequence.</td>
+					</tr>
+					<tr id="typeparam-TSecond">
+						<td>TSecond</td>
+						<td>The type of the elements in the second source sequence.</td>
+					</tr>
+					<tr id="typeparam-TThird">
+						<td>TThird</td>
+						<td>The type of the elements in the third source sequence.</td>
+					</tr>
+					<tr id="typeparam-TFourth">
+						<td>TFourth</td>
+						<td>The type of the elements in the fourth source sequence.</td>
+					</tr>
+					<tr id="typeparam-TFifth">
+						<td>TFifth</td>
+						<td>The type of the elements in the fifth source sequence.</td>
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+	<h1 id="Parameters">Parameters</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover three-cols">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr>
+						<td>first</td>
+						<td><a href="/api/System.Reactive.Linq/IQbservable_1">IQbservable</a><wbr>&lt;TFirst&gt;<wbr></td>
+						<td>First observable source.</td>
+					</tr>
+					<tr>
+						<td>second</td>
+						<td>IObservable<wbr>&lt;TSecond&gt;<wbr></td>
+						<td>Second observable source.</td>
+					</tr>
+					<tr>
+						<td>third</td>
+						<td>IObservable<wbr>&lt;TThird&gt;<wbr></td>
+						<td>Third observable source.</td>
+					</tr>
+					<tr>
+						<td>fourth</td>
+						<td>IObservable<wbr>&lt;TFourth&gt;<wbr></td>
+						<td>Fourth observable source.</td>
+					</tr>
+					<tr>
+						<td>fifth</td>
+						<td>IObservable<wbr>&lt;TFifth&gt;<wbr></td>
+						<td>Fifth observable source.</td>
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+	<h1 id="ReturnValue">Return Value</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover two-cols">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+					<td><a href="/api/System.Reactive.Linq/IQbservable_1">IQbservable</a><wbr>&lt;ValueTuple<wbr>&lt;TFirst, <wbr>TSecond, <wbr>TThird, <wbr>TFourth, <wbr>TFifth&gt;<wbr>&gt;<wbr></td>
+					<td>An observable sequence containing the result of combining elements of the sources using tuple values.</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+
+	
+</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="https://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>

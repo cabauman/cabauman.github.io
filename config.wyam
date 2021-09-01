@@ -1,8 +1,0 @@
-#recipe Docs
-
-// Customize your settings and add new ones here
-Settings[Keys.Host] = "cabauman.github.io/Rx.Net-ReactiveUI-CheatSheet";
-Settings[DocsKeys.Title] = "Rx Docs";
-Settings["AssemblyFiles"] = "src/System.Reactive.dll";
-
-// Add any pipeline customizations here

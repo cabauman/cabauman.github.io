@@ -1,0 +1,487 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+        <title>Rx Docs - API - IConnectableObservable&lt;T&gt; Interface</title>
+        <link href="/assets/css/highlight.css" rel="stylesheet">
+        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/assets/css/override.css" rel="stylesheet">
+        <script src="/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>        
+        <script src="/assets/js/app.min.js"></script>         
+        <script src="/assets/js/highlight.pack.js"></script>   
+        <script src="/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/assets/js/mermaid.min.js"></script>
+        <script src="/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/assets/js/html5shiv.min.js"></script>
+        <script src="/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/" class="logo">
+                            <span>Rx Docs</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li><a href="/about">About This Project</a></li>
+        <li><a href="/docs">Docs</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li class="active"><a href="/api">API</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
+<p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Attributes">Attributes</a></p>
+<p><a href="#TypeParameters">Type Parameters</a></p>
+<p><a href="#Methods">Methods</a></p>
+<p><a href="#ExtensionMethods">Extension Methods</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    	
+	    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/searchIndex.js"></script>
+    <div class="sidebar-form">
+        <div class="input-group">
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
+            <span class="input-group-btn">
+                <button class="btn btn-flat"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+    </div>
+    <div id="search-results">
+    </div>
+    <script>
+        function runSearch(query){
+            $("#search-results").empty();			
+            if( query.length < 2 ){
+                return;
+            }			
+            var results = searchModule.search("*" + query + "*");
+            var listHtml = "<ul class='sidebar-menu'>";	
+            listHtml += "<li class='header'>Type Results</li>";	
+            if(results.length == 0 ){
+                listHtml += "<li>No results found</li>";
+            } else {					
+                for(var i = 0; i < results.length; ++i){
+                    var res = results[i];
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
+                }				
+            }
+            listHtml += "</ul>";				
+            $("#search-results").append(listHtml);
+        }
+
+        $(document).ready(function(){
+            $("#search").on('input propertychange paste', function() {
+                runSearch($("#search").val());
+            });
+        });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
+    </script>
+	
+    <hr>
+
+                    <ul class="sidebar-menu">
+                        
+			<li class="header">Assembly</li>
+		<li><a href="/api/System.Reactive.dll">System<wbr>.Reactive<wbr>.dll</a></li>
+		<li class="header">Namespace</li>
+		<li><a href="/api/System.Reactive.Subjects">System<wbr>.Reactive<wbr>.Subjects</a></li>
+		<li role="separator" class="divider"></li>
+			<li class="header">Class Types</li>
+				<li><a href="/api/System.Reactive.Subjects/AsyncSubject_1">AsyncSubject<wbr>&lt;T&gt;<wbr></a></li>
+				<li><a href="/api/System.Reactive.Subjects/BehaviorSubject_1">BehaviorSubject<wbr>&lt;T&gt;<wbr></a></li>
+				<li><a href="/api/System.Reactive.Subjects/ReplaySubject_1">ReplaySubject<wbr>&lt;T&gt;<wbr></a></li>
+				<li><a href="/api/System.Reactive.Subjects/Subject_1">Subject<wbr>&lt;T&gt;<wbr></a></li>
+				<li><a href="/api/System.Reactive.Subjects/Subject">Subject</a></li>
+				<li><a href="/api/System.Reactive.Subjects/SubjectBase_1">SubjectBase<wbr>&lt;T&gt;<wbr></a></li>
+			<li class="header">Interface Types</li>
+				<li class="selected"><a href="/api/System.Reactive.Subjects/IConnectableObservable_1">I<wbr>Connectable<wbr>Observable<wbr>&lt;T&gt;<wbr></a></li>
+				<li><a href="/api/System.Reactive.Subjects/ISubject_1">ISubject<wbr>&lt;T&gt;<wbr></a></li>
+				<li><a href="/api/System.Reactive.Subjects/ISubject_2">ISubject<wbr>&lt;TSource, <wbr>TResult&gt;<wbr></a></li>
+
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+<section class="content-header">
+	<h1>I<wbr>Connectable<wbr>Observable<wbr>&lt;T&gt;<wbr> <small>Interface</small></h1>
+</section>
+<section class="content">
+	
+	
+		<h1 id="Summary">Summary</h1>
+	<div class="lead">
+            Represents an observable wrapper that can be connected and disconnected from its underlying observable sequence.
+            </div>
+
+		<div class="panel panel-default">
+  			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<dl class="dl-horizontal">		
+								<dt>Assembly</dt>
+								<dd><a href="/api/System.Reactive.dll">System<wbr>.Reactive<wbr>.dll</a></dd>
+
+								<dt>Namespace</dt>
+								<dd><a href="/api/System.Reactive.Subjects">System<wbr>.Reactive<wbr>.Subjects</a></dd>
+											
+								<dt>Interfaces</dt>
+								<dd>
+									<ul class="list-unstyled">
+											<li>IObservable<wbr>&lt;<a href="/api/System.Reactive.Subjects/IConnectableObservable_1#typeparam-T">T</a>&gt;<wbr></li>								
+									</ul>
+								</dd>
+							
+							
+							
+						</dl>
+					</div>		
+					<div class="col-md-6">
+						<div class="mermaid">
+							graph BT
+	Type-.-&gt;Interface0["IObservable&lt;T&gt;"]
+	Type["IConnectableObservable&lt;T&gt;"]
+class Type type-node
+
+						</div>
+					</div>
+				</div>
+  			</div>
+		</div>
+
+	<h1 id="Syntax">Syntax</h1>
+	<pre><code>public interface IConnectableObservable&lt;out T&gt; : IObservable&lt;out T&gt;</code></pre>
+
+
+
+	<h1 id="Attributes">Attributes</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover two-cols">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr>
+						<td>Nullable<wbr>Context<wbr>Attribute</td>
+						<td></td>
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+	<h1 id="TypeParameters">Type Parameters</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover two-cols">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr id="typeparam-T">
+						<td>T</td>
+						<td>
+            The type of the elements in the sequence.
+            This type parameter is covariant. That is, you can use either the type you specified or any type that is more derived. For more information about covariance and contravariance, see Covariance and Contravariance in Generics.
+            </td>
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+
+
+
+
+
+
+			<h1 id="Methods">Methods</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover three-cols">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Value</th>
+								<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/api/System.Reactive.Subjects/IConnectableObservable_1/37C6C009">Connect<wbr>()<wbr></a></td>
+								<td>IDisposable</td>
+								<td>
+									<div>
+            Connects the observable wrapper to its source. All subscribed observers will receive values from the underlying observable sequence as long as the connection is established.
+            </div>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+
+			<h1 id="ExtensionMethods">Extension Methods</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover three-cols">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Value</th>
+								<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/api/System.Reactive.Linq/Observable/32915CEC">AutoConnect<wbr>&lt;T&gt;<wbr><wbr>(int, <wbr>Action<wbr>&lt;IDisposable&gt;<wbr>)<wbr></a></td>
+								<td>IObservable<wbr>&lt;TSource&gt;<wbr></td>
+								<td>
+									<div>
+            Automatically connect the upstream IConnectableObservable at most once when the
+            specified number of IObservers have subscribed to this IObservable.
+            </div>
+										<div><small><em>From <a href="/api/System.Reactive.Linq/Observable">Observable</a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/Observable/3AA1401C">GetAwaiter<wbr>&lt;T&gt;<wbr><wbr>()<wbr></a></td>
+								<td><a href="/api/System.Reactive.Subjects/AsyncSubject_1">AsyncSubject</a><wbr>&lt;TSource&gt;<wbr></td>
+								<td>
+									<div>
+            Gets an awaiter that returns the last value of the observable sequence or throws an exception if the sequence is empty.
+            This operation subscribes and connects to the observable sequence, making it hot.
+            </div>
+										<div><small><em>From <a href="/api/System.Reactive.Linq/Observable">Observable</a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/Observable/81099D06">RefCount<wbr>&lt;T&gt;<wbr><wbr>()<wbr></a></td>
+								<td>IObservable<wbr>&lt;TSource&gt;<wbr></td>
+								<td>
+									<div>
+            Returns an observable sequence that stays connected to the source as long as there is at least one subscription to the observable sequence.
+            </div>
+										<div><small><em>From <a href="/api/System.Reactive.Linq/Observable">Observable</a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/Observable/B500E2DF">RefCount<wbr>&lt;T&gt;<wbr><wbr>(TimeSpan)<wbr></a></td>
+								<td>IObservable<wbr>&lt;TSource&gt;<wbr></td>
+								<td>
+									<div>
+            Returns an observable sequence that stays connected to the source as long as there is at least one subscription to the observable sequence.
+            </div>
+										<div><small><em>From <a href="/api/System.Reactive.Linq/Observable">Observable</a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/Observable/00354B26">RefCount<wbr>&lt;T&gt;<wbr><wbr>(TimeSpan, <wbr>IScheduler)<wbr></a></td>
+								<td>IObservable<wbr>&lt;TSource&gt;<wbr></td>
+								<td>
+									<div>
+            Returns an observable sequence that stays connected to the source as long as there is at least one subscription to the observable sequence.
+            </div>
+										<div><small><em>From <a href="/api/System.Reactive.Linq/Observable">Observable</a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/Observable/E5D2A140">RefCount<wbr>&lt;T&gt;<wbr><wbr>(int)<wbr></a></td>
+								<td>IObservable<wbr>&lt;TSource&gt;<wbr></td>
+								<td>
+									<div>
+            Returns an observable sequence that stays connected to the source as long as there is at least one subscription to the observable sequence.
+            </div>
+										<div><small><em>From <a href="/api/System.Reactive.Linq/Observable">Observable</a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/Observable/2DE833B0">RefCount<wbr>&lt;T&gt;<wbr><wbr>(int, <wbr>TimeSpan)<wbr></a></td>
+								<td>IObservable<wbr>&lt;TSource&gt;<wbr></td>
+								<td>
+									<div>
+            Returns an observable sequence that stays connected to the source as long as there is at least one subscription to the observable sequence.
+            </div>
+										<div><small><em>From <a href="/api/System.Reactive.Linq/Observable">Observable</a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/Observable/88E5474B">RefCount<wbr>&lt;T&gt;<wbr><wbr>(int, <wbr>TimeSpan, <wbr>IScheduler)<wbr></a></td>
+								<td>IObservable<wbr>&lt;TSource&gt;<wbr></td>
+								<td>
+									<div>
+            Returns an observable sequence that stays connected to the source as long as there is at least one subscription to the observable sequence.
+            </div>
+										<div><small><em>From <a href="/api/System.Reactive.Linq/Observable">Observable</a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/System.Reactive.Linq/Observable/B3C4EE0E">RunAsync<wbr>&lt;T&gt;<wbr><wbr>(CancellationToken)<wbr></a></td>
+								<td><a href="/api/System.Reactive.Subjects/AsyncSubject_1">AsyncSubject</a><wbr>&lt;TSource&gt;<wbr></td>
+								<td>
+									<div>
+            Gets an awaiter that returns the last value of the observable sequence or throws an exception if the sequence is empty.
+            This operation subscribes and connects to the observable sequence, making it hot. The supplied CancellationToken can be used to cancel the subscription and connection.
+            </div>
+										<div><small><em>From <a href="/api/System.Reactive.Linq/Observable">Observable</a></em></small></div>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+	
+</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="https://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>
