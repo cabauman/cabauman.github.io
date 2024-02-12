@@ -13,15 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Colt's Coding Journal
+subtitle: Mostly C# and Unity
+logo: "/assets/images/unity-csharp-icon.png"
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  The purpose of this site is to share insights into my day-to-day
+  development experiences, mostly related to C# and game dev with Unity.
+twitter_username: '@GameConstructor'
+github_username: cabauman
+minimal_mistakes_skin: air
+repository: cabauman/cabauman.github.io
 search: true
 
 # Build settings
@@ -60,7 +61,8 @@ plugins:
 author:
   name   : "Colt Bauman"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  location : "South Korea"
+  bio    : "A minimalist developer that has a particular interest in game dev, optimization, test writing, DI, source generators, etc."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -81,6 +83,16 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cabauman"
 
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id: "MDEwOlJlcG9zaXRvcnk0MDE5Mzk4MzQ="
+    category_name: "Announcements"
+    category_id: "DIC_kwDOF_Udes4CdJl3"
+    discussion_term: "pathname"
+    reactions_enabled: '1'
+    theme: "light"
+
 defaults:
   # _posts
   - scope:
@@ -90,7 +102,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
