@@ -48,6 +48,8 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+excerpt_separator: "\n\n"
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
