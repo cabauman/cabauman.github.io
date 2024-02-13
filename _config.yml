@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Colt's Coding Journal
+title: Colt's Code Journal
 subtitle: Mostly C# and Unity
 logo: "/assets/images/unity-csharp-icon.png"
 description: >- # this means to ignore newlines until "baseurl:"
@@ -62,7 +62,7 @@ author:
   name   : "Colt Bauman"
   avatar : "/assets/images/bio-photo.jpg"
   location : "South Korea"
-  bio    : "A minimalist developer that has a particular interest in game dev, optimization, test writing, DI, source generators, etc."
+  bio    : "A minimalist developer with a passion for game development, performance optimization, test writing, IoC, source generators, etc."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
