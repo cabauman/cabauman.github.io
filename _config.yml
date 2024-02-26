@@ -24,6 +24,7 @@ github_username: cabauman
 minimal_mistakes_skin: air
 repository: cabauman/cabauman.github.io
 search: true
+url: https://cabauman.github.io
 
 # Build settings
 markdown: kramdown
