@@ -65,15 +65,15 @@ author:
   location : "South Korea"
   bio    : "A minimalist developer with a passion for game development, performance optimization, test writing, IoC, source generators, etc."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.coltscodejournal.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/@GameConstructor"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cabauman"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/colt45/"
 
 footer:
   links:
@@ -83,6 +83,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cabauman"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/colt45/"
 
 comments:
   provider: "giscus"
