@@ -90,14 +90,14 @@ Console.WriteLine(str);
 But what if we try using commented out code?
 
 ```csharp
-accessor.ReadArray(0, data, 0, data.Length);
+accessor.ReadArray(position: 0, array: data, offset: 0, count: data.Length);
 ```
 
 The 2 `bool` values end up being `True,False` 🤔
 
 If we take a look at the `ReadArray` source code, we can see a call to [`SafeBuffer.AlignedSizeOf<T>()`](https://github.com/dotnet/runtime/blob/37445d4964a50eeff87ca7ed8cbdf251b547b779/src/libraries/System.Private.CoreLib/src/System/IO/UnmanagedMemoryAccessor.cs#L333), which ultimately [calls sizeof(T)](https://github.com/dotnet/runtime/blob/ab888616590c1f9654694af735d1f429fd27e26b/src/libraries/System.Private.CoreLib/src/System/Runtime/InteropServices/SafeBuffer.cs#L409).
 
-`sizeof(MyStruct)` returns 2. That means `ReadArray` was only reading the first 2 bytes instead of all 8. Being that the file bytes are `1,0,0,0,1,0,0,0`, it now makes sense why it returned `True,False`. We can try reading 8 structs from that same file to further prove this theory.
+`sizeof(MyStruct)` returns 1. That means `ReadArray` was only reading the first 2 bytes instead of all 8. Being that the file bytes are `1,0,0,0,1,0,0,0`, it now makes sense why it returned `True,False`. We can try reading 8 structs from that same file to further prove this theory.
 
 ```csharp
 accessor.ReadArray(0, data, 0, 8);
@@ -121,5 +121,3 @@ accessor.ReadArray(position: 0, array: data, offset: 0, count: data.Length);
 ```
 
 Unravelling this bug would have been a daunting task if I used a struct with many different fields and a binary file with thousands of bytes. But as with any problem, breaking it down simplifies the debugging experience a great deal.
-
-
