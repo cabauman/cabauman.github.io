@@ -18,6 +18,15 @@ Replace sample content with your own and [configure as necessary](https://mmista
 
 ---
 
+## Building
+
+```bash
+$env:JEKYLL_ENV="production"; bundle exec jekyll serve
+bundle exec jekyll serve --draft
+```
+
+---
+
 ## Troubleshooting
 
 If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
