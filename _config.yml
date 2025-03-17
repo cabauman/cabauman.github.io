@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Colt's Code Journal
-subtitle: Mostly C# and Unity
+subtitle: Game Programming Enthusiast
 logo: "/assets/images/unity-csharp-icon.png"
 description: >- # this means to ignore newlines until "baseurl:"
   The purpose of this site is to share insights into my day-to-day
