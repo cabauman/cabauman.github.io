@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Colt's Code Journal
-subtitle: Game Programming Enthusiast
+subtitle: Game Programming
 logo: "/assets/images/unity-csharp-icon.png"
 description: >- # this means to ignore newlines until "baseurl:"
   The purpose of this site is to share insights into my day-to-day
@@ -76,6 +76,12 @@ author:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/colt45/"
 
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+
 footer:
   links:
     - label: "Twitter"
@@ -117,6 +123,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 category_archive:
   type: liquid
