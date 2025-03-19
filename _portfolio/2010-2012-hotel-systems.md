@@ -9,7 +9,7 @@ sidebar:
     text: "- Team Size: 1\n- Platform: Windows"
   - title: "Tech"
     text: "C#, WinForms, Microsoft Access Database"
-  - nav: portfolio
+  #- nav: portfolio
 lpdatabase:
   - url: /assets/images/hotelsystems/employee_records.png
     image_path: assets/images/hotelsystems/thumbs/employee_records.png

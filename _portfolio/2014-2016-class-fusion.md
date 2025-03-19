@@ -9,7 +9,7 @@ sidebar:
     text: "- Team Size: 1\n- Platform: Windows"
   - title: "Tech"
     text: "Unity"
-  - nav: portfolio
+  #- nav: portfolio
 gallery:
   - url: /assets/images/classfusion/student_view.png
     image_path: assets/images/classfusion/thumbs/student_view.png

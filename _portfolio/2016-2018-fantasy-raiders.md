@@ -9,7 +9,7 @@ sidebar:
     text: "- Team Size: 10\n- Platform: Mobile & Steam"
   - title: "Tech"
     text: "Unity"
-  - nav: portfolio
+  #- nav: portfolio
 gallery:
   - url: /assets/images/fantasy-raiders/fantasy_raiders01.jpg
     image_path: assets/images/fantasy-raiders/fantasy_raiders01.jpg
