@@ -6,7 +6,7 @@ collection: portfolio
 entries_layout: grid
 classes: wide
 sidebar:
-  nav: portfolio
+#nav: portfolio
 ---
 
 This section is a work-in-progress

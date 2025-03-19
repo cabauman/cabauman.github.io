@@ -9,7 +9,7 @@ sidebar:
     text: "- Team Size: 8\n- Platform: Windows"
   - title: "Tech"
     text: "Unity"
-  - nav: portfolio
+  #- nav: portfolio
 gallery:
   - url: /assets/images/telekinect/telekinectslide.png
     image_path: assets/images/telekinect/thumbs/telekinectslide.png

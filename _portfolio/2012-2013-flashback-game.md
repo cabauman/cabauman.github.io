@@ -9,7 +9,7 @@ sidebar:
     text: "- Team Size: 3\n- Platform: Android"
   - title: "Tech"
     text: "Unity"
-  - nav: portfolio
+  #- nav: portfolio
 gallery:
   - url: /assets/images/flashback/fb_sequencemode.gif
     image_path: assets/images/flashback/thumbs/fb_sequencemode.gif
