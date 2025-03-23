@@ -1,8 +1,10 @@
 ---
-title: "Unity Technologies Projects"
-excerpt: "2018-2022: Educational Technology company"
+title: "Projects at Unity Technologies"
+excerpt: "2022-2024: Digital Twin & Industry Team"
+project_type: Professional
+classes: wide
 header:
-  teaser: /assets/images/unity-employment/lg-meta-slap6.avif
+  teaser: /assets/images/unity-employment/unity-logo.svg
 gallery:
   - url: /assets/images/unity-employment/lg-meta-slap1.gif
     image_path: assets/images/unity-employment/lg-meta-slap1.gif
@@ -14,10 +16,12 @@ gallery:
     image_path: assets/images/unity-employment/lg-meta-slap4.gif
   - url: /assets/images/unity-employment/lg-meta-slap5.gif
     image_path: assets/images/unity-employment/lg-meta-slap5.gif
-classes: wide
 ---
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/unity-employment/unity-logo.svg" style="height: 80px" />
+
+**NOTE:** The following projects were for clients, so only the ones that were made public include screenshots/videos.
+{: .notice--info}
 
 ## LG Meta Slap
 
@@ -27,33 +31,40 @@ classes: wide
 **Platform:** Windows & Mac<br />
 **Role:** Unity Engineer<br />
 **Engineers:** 4<br />
-**Description:** TODO
-
-- SendBird
-- [Agora](https://www.agora.io/en/blog/agora-video-sdk-for-unity-quick-start-programming-guide/)
-- Photon
+**Description:** a virtual office "metaverse" application developed during the COVID-19 pandemic
 
 [Unity Blog: LG U+ fosters real connections for virtual offices](https://unity.com/blog/industry/lg-u-plus-fosters-connections-for-virtual-offices)
 
 {% include gallery %}
 
-**Contributions:**<br />
-- 
+**Notable Contributions:**
+- implemented an in-app messenger using [SendBird](https://sendbird.com/docs/chat/sdk/v4/unity/getting-started/send-first-message) (basically a clone of KakaoTalk)
+  - incremental message history loading based on scroll
+  - file/image uploads with expirations
+  - 1:1 and group chats
+  - user profiles, favorites, mentions with autocomplete
+- implemented video and voice chat with [Agora](https://www.agora.io/en/blog/agora-video-sdk-for-unity-quick-start-programming-guide/) library
+- implemented native plugins for both Windows and Mac
+  - file selection and save dialogs
+  - window resizing and "always on top"
+- replaced AWS API calls with custom backend API
+- integrated Unity analytics
 
-## Google Optimization - Project 
+## App Optimization - Project Makeover
 
-{% include video id="R0X5k8IJ4Tk" provider="youtube" class="align-right" style="width: 40%" %}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unity-employment/project-makeover.webp" style="width: 40%" class="align-right"/>
+
 
 **Period:** Feb 2023 - Apr 2023<br />
 **Platform:** Android<br />
 **Role:** Unity Engineer<br />
 **Engineers:** 3<br />
-**Description:** TODO
+**Description:** The goal of this project was to profile the whole application to make as many optimizations as possible.
 
 [Project Makeover on Google Play](https://play.google.com/store/apps/details?id=com.bgg.jump&hl=en)
 
-**Contributions:**<br />
-- reduced C# GC allocations
+**Notable Contributions:**
+- reduced GC (closures, boxing, temporary allocations, etc.)
 - reduced audio and texture storage space
 - improved loading times via config values and caching
 
@@ -63,52 +74,44 @@ classes: wide
 **Platform:** Windows<br />
 **Role:** .NET Backend Engineer<br />
 
-**Confidential:** details and screenshots excluded
-{: .notice--info}
-
-**Contributions:**<br />
+**Notable Contributions:**
+- implemented basic player matching
 - developed a mock .NET backend service that can be swapped in and out with the real external dependency; this was important for deterministic testing; this mock service includes the use of RPC and Redis
 - improved stability by catching potential regressions and edge cases via improved code coverage and CI
 
 ## NUHS Holomedicine
 
-<iframe style="aspect-ratio: 1280 / 720;" width="504" height="0" src="{{ site.url }}{{ site.baseurl }}/assets/images/unity-employment/nuhs-video.mp4" frameborder="0" class="align-right"> </iframe>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unity-employment/nuhs-holomedicine.png" style="width: 40%" class="align-right"/>
 
 **Period:** Jul 2023 - Sep 2023<br />
 **Platform:** Microsoft HoloLens 2<br />
 **Role:** Unity Engineer<br />
 **Engineers:** 4<br />
-**Description:** Project for the [National University Health System](https://www.nuhs.edu.sg/) in Singapore
+**Description:** Project for the [National University Health System](https://www.nuhs.edu.sg/) in Singapore which utilizes [Mixed Reality Toolkit (MRTK)](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-overview/).
 
-- Mixed Reality Toolkit (MRTK)
-- gRPC
-- OpenCV
-- Python
-- NumPy
-
-**Contributions:**<br />
+**Notable Contributions:**
 - implemented file selection and file save dialogs
-- implemented "scan region" translate/rotate/scale cuboid
-- implemented scan progress feature
-- optimized 3D mesh reconstruction
+- implemented ultrasound user flow
+  - instruct user to translate/rotate/scale a cuboid and use the handheld device to scan within
+  - convert world-space values to cuboid-space
+  - send scanned data to backend via gRPC
+  - display loading indicator while asynchronously awaiting the result of 3D mesh reconstruction
 - implemented play-mode tests that simulate XR interactions in the editor (e.g. pressing buttons and interacting with the cuboid)
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7114952710122049536?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
 ## Satellite Monitoring Prototype
 
 **Period:** Oct 2023 - Nov 2023<br />
 **Platform:** Windows<br />
 **Role:** Unity Engineer<br />
-**Engineers:** 1 (and 1 TA)<br />
-**Description:** This project is 
+**Engineers:** 1 (and 1 TA)
 
-**Confidential:** details and screenshots excluded
-{: .notice--info}
-
-**Contributions:**<br />
-- implement camera controls (rotate around the Earth model and zoom in/out)
-- implement deterministic orbits using the eclipse equation, and expose properties that TA can configure
+**Notable Contributions:**
+- implemented camera controls (rotate around the Earth model and zoom in/out)
+- implemented deterministic orbits using the equation for an eclipse, and expose properties that TA can configure
   - we initially used the Splines package but it was inefficient
-- trigger alert when a satellite gets to close to debris or another satellite; then enter simulation mode for collision predication
+- trigger alert when a satellite gets too close to debris or another satellite; then enter simulation mode for collision predication
 - wrote a compute shader that renders thousands of quads that always face the camera and rotate around the Earth in random orbits
 
 ## Smart City Project
@@ -119,15 +122,9 @@ classes: wide
 **Engineers:** 2<br />
 **Description:** Visualize city data such as building visitors, sales, weather, populations, etc. Visualizations include day/night system, rain, clouds, heat map, world-space UI, point cloud, and others.
 
-- https://assetstore.unity.com/packages/tools/utilities/plateau-sdk-for-unity-245703?srsltid=AfmBOooPu4Uj4RKCepnyPMa5ePaELak7AdFPJjEb6aQJqc5Zc0CsBx6z#reviews
-
-**Confidential:** details and screenshots excluded
-{: .notice--info}
-
-**Contributions:**<br />
+**Notable Contributions:**
 - developed a custom editor window using UI Toolkit
-  - convert CSV data to binary for efficient storage and fast reading at runtime
-  - implemented an extensible importer system; each CSV type has it's own importer class, because of specific data processing requirements, but share the same interface
+  - designed importer to parse, filter, and transform CSV data to binary for efficient storage and fast reading at runtime
   - utilize Unity's [Background Tasks Window](https://docs.unity3d.com/6000.2/Documentation/Manual/BackgroundTasksWindow.html) for asynchronous imports via the [Progress API](https://docs.unity3d.com/6000.2/Documentation/ScriptReference/Progress.html); tested with CSV files up to 10gb in size
 - implemented simulation playback: select a date range via calendar pickers and then use the play/pause button and slider to simulate
   - also implemented split screen mode to simulate and compare two date ranges side-by-side
@@ -141,10 +138,9 @@ classes: wide
 **Platform:** Windows<br />
 **Role:** Unity Engineer<br />
 **Engineers:** 3<br />
-**Description:** TODO
+**Description:** [Advanced Driver-Assistance System](https://en.wikipedia.org/wiki/Advanced_driver-assistance_system) | [Human-Machine Interface](https://en.wikipedia.org/wiki/User_interface)
 
-**Confidential:** details and screenshots excluded
-{: .notice--info}
-
-**Contributions:**<br />
+**Notable Contributions:**
 - developed custom editor windows using both IMGUI and UI Toolkit
+  - add/remove/edit data items and save in ScriptableObjects
+  - handle communication between multiple editor windows; basically a master-detail UI with a tree view of data items

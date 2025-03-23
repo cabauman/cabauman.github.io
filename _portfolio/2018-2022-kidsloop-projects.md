@@ -1,8 +1,10 @@
 ---
 title: "KidsLoop Projects"
 excerpt: "2018-2022: Educational Technology company"
+project_type: Professional
+classes: wide
 header:
-  teaser: /assets/images/fantasy-raiders/fantasy_raiders00.jpg
+  teaser: /assets/images/kidsloop/kidsloop-logo.png
 gallery:
   - url: /assets/images/kidsloop/esl-dashboard-summary.png
     image_path: assets/images/kidsloop/esl-dashboard-summary.png
@@ -14,7 +16,6 @@ gallery:
     image_path: assets/images/kidsloop/esl-dashboard-listening-analysis.png
   - url: /assets/images/kidsloop/esl-dashboard-speaking-analysis.png
     image_path: assets/images/kidsloop/esl-dashboard-speaking-analysis.png
-classes: wide
 ---
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/kidsloop/kidsloop-logo.png" style="width: 100px" />
@@ -29,9 +30,10 @@ classes: wide
 **Engineers:** 2 backend, 2 frontend<br />
 **Description:** a UI application for parents and teachers, developed from scratch
 
-**Contributions:**<br />
-- authentication
-- virtual list view
+**Notable Contributions:**
+- authentication and authorization
+- virtual list views
+- offline mode and syncing when back online
 - asynchronous file loading and API calls + loading indicators
 
 ## Badanamu Apps
@@ -43,7 +45,7 @@ classes: wide
 **Role:** Unity Engineer<br />
 **Description:** a suite of child learning applications that have been published on Google Play and Apple Store for many years
 
-**Contributions:**
+**Notable Contributions:**
 - in-app purchasing
 - update Unity versions
 - integrate analytics
@@ -58,7 +60,7 @@ classes: wide
 **Role:** Unity Engineer<br />
 **Description:** a library for use in the Badanamu ESL learning application. It’s a dashboard that presents all kinds of learning statistics in categories such as reading, writing, listening, and speaking. I worked on this project with two other Unity developers and a couple backend developers.
 
-**Contributions:**
+**Notable Contributions:**
 - native Android and iOS media plugins for taking pictures, choosing from a gallery, and image resizing/compression.
 - speech recognition library utilizing Amazon Transcribe. I developed both the frontend and backend using .NET, and deployed it to AWS as a Docker container.
 - asynchronous file loading and API calls + loading indicators
@@ -75,10 +77,10 @@ classes: wide
 **Role:** Backend Engineer<br />
 **Description:** an online learning platform for parents, teachers, and students
 
-**Contributions:** implement and manage the following repositories
-- H5P Service
-- Assessment Service
-- Media Storage Service
-- xAPI Service
-- xAPI Uploader
-- Media Storage React Hooks
+**Notable Contributions:** implement and manage the following repositories
+- H5P Service: built on top of [H5P-Nodejs-library](https://github.com/Lumieducation/H5P-Nodejs-library); utilized Redis, MongoDB, express db, React, etc.
+- Media Storage Service: stores audio, video, images, etc. recevied from H5P activities
+- Media Storage React Hooks: a library used by certain client-side H5P activities to upload media such as audio recordings and screenshots
+- xAPI Service: stores [xAPI events](https://docs.openedx.org/en/latest/developers/references/internal_data_formats/xapi_events.html) received from H5P activities
+- xAPI Uploader: a library used by client-side H5P activities for uploading [user interaction events](https://h5p.org/events) to the xAPI Service
+- Assessment Service: stores class results for students which is queried and presented in a frontend dashboard; reads from the xAPI service and Media Storage Service; utilizes Postgres, GraphQL, Redis, etc.

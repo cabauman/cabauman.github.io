@@ -1,6 +1,7 @@
 ---
 title: "Telekinect"
-excerpt: "2011-2012: Single/Multiplayer 'Off-Rails' Kinect Adventure"
+excerpt: "2011-2012: Senior Project | Single/Multiplayer 'Off-Rails' Kinect Adventure"
+project_type: University
 header:
   teaser: /assets/images/telekinect/telekinect_gameplay.png
 sidebar:

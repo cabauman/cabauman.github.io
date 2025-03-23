@@ -1,6 +1,7 @@
 ---
 title: "Fantasy Raiders"
 excerpt: "2016-2018: action adventure game released on Steam"
+project_type: Professional
 header:
   teaser: /assets/images/fantasy-raiders/fantasy_raiders00.jpg
 sidebar:
