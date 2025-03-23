@@ -1,0 +1,30 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+
+
+{% if page.project_types %}
+  {% for project_type in page.project_types %}
+    {% assign entries = site[page.collection] | where_exp: "post", "post.hidden != true" %}
+    {% assign project_type_entries = entries | where: "project_type", project_type %}
+    {% if project_type_entries.size > 0 %}
+      <h2 style="margin-top: 0.2em">{{ project_type }}</h2>
+      {% if project_type == "Semi-Professional" %}
+        <p class="notice">Projects developed for companies but not paid or hired as a software engineer</p>
+      {% endif %}
+      <div class="entries-{{ entries_layout }}" style="display:flow-root">
+        {% include documents-collection.html entries=project_type_entries sort_by=page.sort_by sort_order=page.sort_order type=entries_layout %}
+      </div>
+      {% else %}
+        <p>No entries found for {{ project_type }}</p>
+      {% endif %}
+  {% endfor %}
+{% else %}
+  <div class="entries-{{ entries_layout }}">
+    {% include documents-collection.html entries=entries sort_by=page.sort_by sort_order=page.sort_order type=entries_layout %}
+  </div>
+{% endif %}

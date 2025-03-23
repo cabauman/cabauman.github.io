@@ -1,6 +1,7 @@
 ---
 title: "Class Fusion"
 excerpt: "2014-2016: A Classroom Management System developed while teaching"
+project_type: Semi-Professional
 header:
   teaser: /assets/images/classfusion/thumbs/student_view.png
 sidebar:

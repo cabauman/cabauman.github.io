@@ -1,6 +1,7 @@
 ---
 title: "Hotel Systems"
-excerpt: "2010-2012: 'Lost and Found Tracker' & 'Loss Prevention Database' that I devleloped while working for hotel Loss Prevention"
+excerpt: "2010-2012: Projects that I devleloped while working for hotel Loss Prevention"
+project_type: Semi-Professional
 header:
   teaser: /assets/images/hotelsystems/lpdatabase2.png
 sidebar:
@@ -28,7 +29,7 @@ lpdatabase:
   - url: /assets/images/hotelsystems/submit_report_info.png
     image_path: assets/images/hotelsystems/thumbs/submit_report_info.png
 
-lfhandler:
+lftracker:
   - url: /assets/images/hotelsystems/lfhandler.png
     image_path: assets/images/hotelsystems/thumbs/lfhandler.png
   - url: /assets/images/hotelsystems/lfhandler2.png
