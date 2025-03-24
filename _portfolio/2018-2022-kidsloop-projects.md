@@ -5,6 +5,9 @@ project_type: Professional
 classes: wide
 header:
   teaser: /assets/images/kidsloop/kidsloop-logo.png
+sidebar:
+  - image: /assets/images/kidsloop/kidsloop-logo.png
+    text: "Nov 2018 - Jul 2022"
 gallery:
   - url: /assets/images/kidsloop/esl-dashboard-summary.png
     image_path: assets/images/kidsloop/esl-dashboard-summary.png
@@ -17,8 +20,6 @@ gallery:
   - url: /assets/images/kidsloop/esl-dashboard-speaking-analysis.png
     image_path: assets/images/kidsloop/esl-dashboard-speaking-analysis.png
 ---
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/kidsloop/kidsloop-logo.png" style="width: 100px" />
 
 ## KidsLoop V1
 

@@ -5,11 +5,9 @@ project_type: University
 header:
   teaser: /assets/images/telekinect/telekinect_gameplay.png
 sidebar:
-  - title: "Role"
+  - title: "Details"
     image: /assets/images/telekinect/thumbs/telekinectslide.png
-    text: "- Team Size: 8\n- Platform: Windows"
-  - title: "Tech"
-    text: "Unity"
+    text: "- Team Size: 8\n- Platform: Windows\n- Tech: Unity, Kinect"
   #- nav: portfolio
 gallery:
   - url: /assets/images/telekinect/telekinectslide.png

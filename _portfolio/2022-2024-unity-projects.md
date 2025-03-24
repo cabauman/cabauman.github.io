@@ -5,6 +5,9 @@ project_type: Professional
 classes: wide
 header:
   teaser: /assets/images/unity-employment/unity-logo.svg
+sidebar:
+  - image: /assets/images/unity-employment/unity-logo.svg
+    text: "Aug 2022 - Apr 2024<br/>Accelerate Solutions team: build real-time 3D applications for Industry such as Automotive, Manufacturing, Retail, and Healthcare"
 gallery:
   - url: /assets/images/unity-employment/lg-meta-slap1.gif
     image_path: assets/images/unity-employment/lg-meta-slap1.gif
@@ -17,8 +20,6 @@ gallery:
   - url: /assets/images/unity-employment/lg-meta-slap5.gif
     image_path: assets/images/unity-employment/lg-meta-slap5.gif
 ---
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unity-employment/unity-logo.svg" style="height: 80px" />
 
 **NOTE:** The following projects were for clients, so only the ones that were made public include screenshots/videos.
 {: .notice--info}
