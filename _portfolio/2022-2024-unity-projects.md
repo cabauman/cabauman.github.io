@@ -5,6 +5,9 @@ project_type: Professional
 classes: wide
 header:
   teaser: /assets/images/unity-employment/unity-logo.svg
+sidebar:
+  - image: /assets/images/unity-employment/unity-logo.svg
+    text: "Aug 2022 - Apr 2024<br/>Accelerate Solutions team: build real-time 3D applications for Industry such as Automotive, Manufacturing, Retail, and Healthcare"
 gallery:
   - url: /assets/images/unity-employment/lg-meta-slap1.gif
     image_path: assets/images/unity-employment/lg-meta-slap1.gif
@@ -17,8 +20,6 @@ gallery:
   - url: /assets/images/unity-employment/lg-meta-slap5.gif
     image_path: assets/images/unity-employment/lg-meta-slap5.gif
 ---
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unity-employment/unity-logo.svg" style="height: 80px" />
 
 **NOTE:** The following projects were for clients, so only the ones that were made public include screenshots/videos.
 {: .notice--info}
@@ -90,9 +91,9 @@ gallery:
 **Description:** Project for the [National University Health System](https://www.nuhs.edu.sg/) in Singapore which utilizes [Mixed Reality Toolkit (MRTK)](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-overview/).
 
 **Notable Contributions:**
-- implemented file selection and file save dialogs
+- implemented high performance filtering using Burst and the Unity Job System
 - implemented ultrasound user flow
-  - instruct user to translate/rotate/scale a cuboid and use the handheld device to scan within
+  - instruct user to translate/rotate/scale a cuboid and use the medical handheld device to scan within
   - convert world-space values to cuboid-space
   - send scanned data to backend via gRPC
   - display loading indicator while asynchronously awaiting the result of 3D mesh reconstruction

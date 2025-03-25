@@ -5,6 +5,9 @@ project_type: Professional
 classes: wide
 header:
   teaser: /assets/images/kidsloop/kidsloop-logo.png
+sidebar:
+  - image: /assets/images/kidsloop/kidsloop-logo.png
+    text: "Nov 2018 - Jul 2022"
 gallery:
   - url: /assets/images/kidsloop/esl-dashboard-summary.png
     image_path: assets/images/kidsloop/esl-dashboard-summary.png
@@ -17,8 +20,6 @@ gallery:
   - url: /assets/images/kidsloop/esl-dashboard-speaking-analysis.png
     image_path: assets/images/kidsloop/esl-dashboard-speaking-analysis.png
 ---
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/kidsloop/kidsloop-logo.png" style="width: 100px" />
 
 ## KidsLoop V1
 
@@ -74,7 +75,7 @@ gallery:
 
 **Period:** Jul 2020 - Jul 2022<br />
 **Platform:** Web<br />
-**Role:** Backend Engineer<br />
+**Role:** Backend Engineer (NodeJS/TypeScript)<br />
 **Description:** an online learning platform for parents, teachers, and students
 
 **Notable Contributions:** implement and manage the following repositories
@@ -83,4 +84,6 @@ gallery:
 - Media Storage React Hooks: a library used by certain client-side H5P activities to upload media such as audio recordings and screenshots
 - xAPI Service: stores [xAPI events](https://docs.openedx.org/en/latest/developers/references/internal_data_formats/xapi_events.html) received from H5P activities
 - xAPI Uploader: a library used by client-side H5P activities for uploading [user interaction events](https://h5p.org/events) to the xAPI Service
-- Assessment Service: stores class results for students which is queried and presented in a frontend dashboard; reads from the xAPI service and Media Storage Service; utilizes Postgres, GraphQL, Redis, etc.
+- Assessment Service: stores class results for students which is queried and presented in a frontend dashboard; reads from the xAPI service and Media Storage Service
+
+I worked with many different technologies while developing these services such as Postgres, GraphQL, Redis, AWS (S3, Lambda, ECS, DynamoDB, RDS, IAM), Terraform, Postgres, and Docker. I was originally hired as a Unity Engineer, but when company priorities changed, they asked if I'd be interested in switching over to backend engineering. I'm always up for learning new things and expanding my software engineering skillset, so I accepted. My excitement for the opportunity also took over my personal/hobby development time, which was normally dedicated to Unity and C#. I had never really done any backend engineering or NodeJS/TypeScript development, so I went all-in on studying and practicing. I still prefer game development, but this was an enjoyable and enlightening experience.

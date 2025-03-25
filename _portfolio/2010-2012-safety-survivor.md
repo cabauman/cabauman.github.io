@@ -1,15 +1,13 @@
 ---
 title: "Safety Survivor"
-excerpt: "2010-2012: A hotel safety committee game, that I devleloped while working for hotel Loss Prevention"
+excerpt: "2010-2012: A hotel safety committee game that I devleloped while working for hotel Loss Prevention"
 project_type: Semi-Professional
 header:
   teaser: /assets/images/safetysurvivor/thumbs/safetysurvivor-footage1.jpg
 sidebar:
-  - title: "Role"
+  - title: "Details"
     image: /assets/images/safetysurvivor/thumbs/safetysurvivor-footage1.jpg
-    text: "- Team Size: 1\n- Platform: Windows"
-  - title: "Tech"
-    text: "Unity"
+    text: "- Team Size: 1\n- Platform: Windows\n- Tech: Unity"
   #- nav: portfolio
 gallery:
   - url: /assets/images/safetysurvivor/safetysurvivor-titlescreen.png

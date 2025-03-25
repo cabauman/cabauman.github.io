@@ -5,11 +5,9 @@ project_type: Semi-Professional
 header:
   teaser: /assets/images/flashback/thumbs/fb_sequencemode.gif
 sidebar:
-  - title: "Role"
+  - title: "Details"
     image: /assets/images/flashback/fb_titlescreen.jpg
-    text: "- Team Size: 3\n- Platform: Android"
-  - title: "Tech"
-    text: "Unity"
+    text: "- Team Size: 3\n- Platform: Android\n- Tech: Unity"
   #- nav: portfolio
 gallery:
   - url: /assets/images/flashback/fb_sequencemode.gif

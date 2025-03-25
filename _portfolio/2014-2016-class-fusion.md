@@ -5,11 +5,9 @@ project_type: Semi-Professional
 header:
   teaser: /assets/images/classfusion/thumbs/student_view.png
 sidebar:
-  - title: "Role"
+  - title: "Details"
     image: /assets/images/classfusion/thumbs/student_view.png
-    text: "- Team Size: 1\n- Platform: Windows"
-  - title: "Tech"
-    text: "Unity"
+    text: "- Team Size: 1\n- Platform: Windows\n- Tech: Unity"
   #- nav: portfolio
 gallery:
   - url: /assets/images/classfusion/student_view.png

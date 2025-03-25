@@ -5,11 +5,9 @@ project_type: Semi-Professional
 header:
   teaser: /assets/images/hotelsystems/lpdatabase2.png
 sidebar:
-  - title: "Role"
+  - title: "Details"
     image: /assets/images/hotelsystems/lpdatabase2.png
-    text: "- Team Size: 1\n- Platform: Windows"
-  - title: "Tech"
-    text: "C#, WinForms, Microsoft Access Database"
+    text: "- Team Size: 1\n- Platform: Windows\n- Tech: C#, WinForms, Microsoft Access Database"
   #- nav: portfolio
 lpdatabase:
   - url: /assets/images/hotelsystems/employee_records.png

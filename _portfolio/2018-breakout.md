@@ -5,11 +5,9 @@ project_type: Personal
 header:
   teaser: /assets/images/breakout/screen04.png
 sidebar:
-  - title: "Role"
+  - title: "Details"
     image: /assets/images/breakout/screen04.png
-    text: "- Team Size: 1\n- Platform: Windows"
-  - title: "Tech"
-    text: "Unity"
+    text: "- Team Size: 1\n- Platform: Windows\n- Tech: Unity, UniRx"
   #- nav: portfolio
 gallery:
   - url: /assets/images/breakout/screen01.png
