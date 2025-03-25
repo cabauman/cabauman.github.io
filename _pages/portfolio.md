@@ -16,5 +16,5 @@ classes: wide
 #nav: portfolio
 ---
 
-This section is a work-in-progress
+**NOTE:** This portfolio section is a work-in-progress
 {: .notice--info}

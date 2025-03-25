@@ -91,9 +91,9 @@ gallery:
 **Description:** Project for the [National University Health System](https://www.nuhs.edu.sg/) in Singapore which utilizes [Mixed Reality Toolkit (MRTK)](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-overview/).
 
 **Notable Contributions:**
-- implemented file selection and file save dialogs
+- implemented high performance filtering using Burst and the Unity Job System
 - implemented ultrasound user flow
-  - instruct user to translate/rotate/scale a cuboid and use the handheld device to scan within
+  - instruct user to translate/rotate/scale a cuboid and use the medical handheld device to scan within
   - convert world-space values to cuboid-space
   - send scanned data to backend via gRPC
   - display loading indicator while asynchronously awaiting the result of 3D mesh reconstruction
