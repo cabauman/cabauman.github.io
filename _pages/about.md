@@ -9,10 +9,10 @@ Welcome to my code journal, where I share insights into my day-to-day developmen
 
 ## About me
 
-My name is Colt Bauman. I have about 9 years of professional experience, and 16 years overall as a software engineer. 7 of those 9 years are C#/Unity based, and the other 2 years are NodeJS/backend based. I also have 1 year of professional experience using Unreal Engine. I graduated with a Bachelor of Science degree in Game and Simulation Programming in February of 2012, where C++ and C# were the primary languages.
+My name is Colt Bauman. I have about 9 years of professional experience, and 16 years overall as a software engineer. 7 of those 9 years are C#/Unity based, and the other 2 years are NodeJS/backend based. I also have 1 year of professional experience using Unreal Engine and C++. I graduated with a Bachelor of Science degree in Game and Simulation Programming in February of 2012, where C++ and C# were the primary languages.
 
 In terms of game development, I'm most passionate about
-- vector math
+- 3D vector math
 - implementing game mechanics and systems
 - low level techniques implemented by game engines
 
