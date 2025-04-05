@@ -36,11 +36,11 @@ gallery:
     alt: "vocaBird"
 ---
 
-This is a project that came about when I moved to South Korea in 2013 to teach English. I'm always looking for ways to utilize my programming skillset, so this was a perfect opportunity. Class fusion integrates educational games into a student reward system, which serves as an incentive for good behavior.
+This is a project that came about when I moved to South Korea in 2013 to teach English. I'm always looking for ways to utilize my programming skill set, so this was a perfect opportunity. Class fusion integrates educational games into a student reward system, which serves as an incentive for good behavior.
 
 - Add/remove classes and student profiles
 - Coins earned in games are automatically added to student profiles
-- Customizeable milestones/rewards
+- Customizable milestones/rewards
 - Use earned coins in the virtual store
 - Avatar selection
 - 2 games: team & single player modes

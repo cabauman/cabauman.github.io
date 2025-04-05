@@ -117,7 +117,7 @@ gallery:
 
 ## Smart City Project
 
-**Period:** Nov 2024 - Feb 2024<br />
+**Period:** Nov 2023 - Feb 2024<br />
 **Platform:** Windows & Mac<br />
 **Role:** Unity Engineer<br />
 **Engineers:** 2<br />
@@ -131,7 +131,7 @@ gallery:
   - also implemented split screen mode to simulate and compare two date ranges side-by-side
 - utilized low-level code and the [MemoryMappedFile API](https://learn.microsoft.com/en-us/dotnet/standard/io/memory-mapped-files) to reference a specific range of data without needing to load the whole binary file
 - applied custom and minimalistic dependency injection resulting in zero singletons in the project
-- caught data import bugs and runtime data presentation bugs thanks to unit and intergration tests
+- caught data import bugs and runtime data presentation bugs thanks to unit and integration tests
 
 ## ADAS HMI Project
 
