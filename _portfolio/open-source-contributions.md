@@ -1,23 +1,27 @@
 ---
 title: "Various Open Source Contributions"
-excerpt: "Links to PRs and Stack Overflow Answers"
+excerpt: "Some notable contributions to open source repositories"
 project_type: Personal
+#classes: wide
+toc: true
+toc_sticky: true
 header:
-  teaser: /assets/images/ohmyposh/ohmyposh-unity-segment1.png
+  teaser: /assets/images/open-source/open-source.webp
 sidebar:
-  - title: "Details"
-    image: /assets/images/ohmyposh/ohmyposh-unity-segment1.png
-    text: "- Team Size: 1\n- Platform: Windows, MacOS, Linux\n- Tech: Go"
+  - title: "Notable Contributions"
+    image: /assets/images/open-source/open-source.webp
   #- nav: portfolio
 ---
 
-## Oh My Posh
+## Oh My Posh Unity Segment
 
-[ohmyposh.dev](https://ohmyposh.dev/){: .btn .btn--info}
+[Website](https://ohmyposh.dev/){: .btn .btn--success}
 
-**Tech:** Go
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/open-source/ohmyposh-unity-segment1.png"/>
 
-> Oh My Posh is a custom prompt engine for any shell that has the ability to adjust the prompt string with a function or variable. A segment renders a single context like showing the current folder, user information or git status when relevant. It can be styled any way you want, resulting in visualizing the prompt you are looking for.
+**Tags:** Go
+
+> Oh My Posh is a custom prompt engine for any shell that is structured around the concept of "segments", which renders a single context like showing the current folder, user information or git status when relevant.
 
 Because I frequently use Unity Engine and am a fan of the oh-my-posh terminal extension, I decided to contribute a custom *segment* that displays the Unity version and C# version of the current working directory. This was my first time using Go.
 
@@ -27,47 +31,52 @@ Because I frequently use Unity Engine and am a fan of the oh-my-posh terminal ex
 
 ## Versionize
 
-[GitHub](https://github.com/versionize/versionize)
-
-[NuGet Page](https://www.nuget.org/packages/Versionize)
+[GitHub](https://github.com/versionize/versionize){: .btn .btn--info} [NuGet](https://www.nuget.org/packages/Versionize){: .btn .btn--primary}
 
 > Automatic versioning and CHANGELOG generation, using conventional commit messages
 
-**Tech:** C#
+**Tags:** C#, conventional commits
 
 - I'm one of two core maintainers.
 - The other developer was the original creator and I joined on later.
 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/open-source/versionize1.png" />
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/open-source/versionize2.png" />
+
 ## ReactiveUI
 
-**Tech:** C#, Rx.NET
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/open-source/reactiveui-logo.png" class="align-right" />
 
-I'm a [core maintainer](https://github.com/reactiveui/ReactiveUI#core-team) alumnus.
+[GitHub](https://github.com/reactiveui/reactiveui){: .btn .btn--info} [Website](https://www.reactiveui.net/){: .btn .btn--success}
+
+**Tags:** C#, Rx.NET, iOS, Android, UWP, WPF
+
+I was a [core maintainer](https://github.com/reactiveui/ReactiveUI#core-team) from about 2018 to 2022. This includes code contributions, providing support in the ReactiveUI Slack channel and answering questions on [Stack Overflow](https://stackoverflow.com/users/5984310/colt-bauman?tab=answers).
 
 [PRs](https://github.com/reactiveui/ReactiveUI/pulls?q=is%3Apr+is%3Aclosed+author%3Acabauman)
-- [Fix memory leak](https://github.com/reactiveui/ReactiveUI/pull/2504)
-- [Fix threading issue](https://github.com/reactiveui/ReactiveUI/pull/2496)
-- [Migrate from Android Support libraries to AndroidX](https://github.com/reactiveui/ReactiveUI/pull/2156)
+- [fix(memory leak): original view model is not released when swapped out](https://github.com/reactiveui/ReactiveUI/pull/2504)
+- [fix(threading): RxApp scheduler logic makes unit tests unpredictable](https://github.com/reactiveui/ReactiveUI/pull/2496)
 
-[Stack Overflow Answers](https://stackoverflow.com/users/5984310/colt-bauman?tab=answers)
+## PropertyChanged
 
-## PropertyChanged (Rx.NET)
+[NuGet](https://www.nuget.org/packages/ReactiveMarbles.PropertyChanged){: .btn .btn--primary}
 
-**Tech:** C#, Rx.NET
+**Tags:** C#, Rx.NET
 
 [Performance and benchmark PRs](https://github.com/reactivemarbles/PropertyChanged/pulls?q=is%3Apr+is%3Aclosed+author%3Acabauman)
-
-[C# source generator feature PR](https://github.com/reactivemarbles/PropertyChanged/pull/113)
-
-[NuGet Page](https://www.nuget.org/packages/ReactiveMarbles.PropertyChanged)
 
 {% include video id="dLqqcMDGi1o" provider="youtube" %}
 
 ## H5P-Nodejs-library
 
-**Tech:** NodeJS, TypeScript
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/open-source/h5p-logo.png" style="width: 30%" class="align-right" />
 
-> This library provides everything needed to create custom H5P servers running on NodeJS. It is written in TypeScript and fully typed, which makes it much easier to work with than the official PHP server. Of course, it's also possible to use this library in projects with JavaScript (ES5) and you will still profit from the typings by getting code completion in your IDE.
+**Tags:** H5P, NodeJS, TypeScript, S3, MongoDB
+
+I contributed this repository while working as a backend engineer at KidsLoop because we were using this library.
+
+> This TypeScript library provides everything needed to create custom H5P servers running on NodeJS.
 
 [2 Contributions](https://github.com/Lumieducation/H5P-Nodejs-library/pulls?q=is%3Apr+is%3Aclosed+author%3Acabauman)
 - fix(h5p-mongos3): s3 lifecycle helper not taking effect
@@ -75,8 +84,37 @@ I'm a [core maintainer](https://github.com/reactiveui/ReactiveUI#core-team) alum
 
 ## .NET-Ogg-Vorbis-Encoder
 
-**Tech:** C#
+[NuGet](https://www.nuget.org/packages/OggVorbisEncoder){: .btn .btn--primary}
+
+**Tags:** C#, Vorbis
 
 [Major Performance Improvement PR](https://github.com/SteveLillis/.NET-Ogg-Vorbis-Encoder/pull/11)
 
-[NuGet Page](https://www.nuget.org/packages/OggVorbisEncoder)
+**Before**
+
+|         Method |    Mean |    Error |   StdDev | Allocated |
+|--------------- |--------:|---------:|---------:|----------:|
+| ConvertPCMFile | 4.174 s | 0.0828 s | 0.1835 s | 608.78 MB |
+
+**After**
+
+|         Method |    Mean |    Error |   StdDev | Allocated |
+|--------------- |--------:|---------:|---------:|----------:|
+| ConvertPCMFile | 1.605 s | 0.0374 s | 0.1073 s | 162.53 MB |
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/open-source/ogg-vorbis-encoder1.png" />
+
+- Change IList parameters to concrete types (array and OffsetArray)
+- Use Span<T> instead of OffsetArray
+- Add stackalloc and MemoryPool optimizations
+
+Allocate temporary arrays on the stack instead of the heap when the size is small enough. Otherwise, use a pool and slice it to the needed size.
+
+```csharp
+float[] seedArr = null;
+Span<float> seed = _totalOctaveLines <= 128
+    ? stackalloc float[_totalOctaveLines]
+    : (seedArr = ArrayPool<float>.Shared.Rent(_totalOctaveLines));
+
+seed = seed.Slice(0, _totalOctaveLines);
+```
