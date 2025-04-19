@@ -11,7 +11,9 @@ sidebar:
   #- nav: portfolio
 ---
 
+<a href="{{ site.url }}{{ site.baseurl }}/assets/images/gpu-instancing/gpu-instancing-inspector.png">
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/gpu-instancing/gpu-instancing-inspector.png" style="width: 40%" class="align-right"/>
+</a>
 
 Features
 - can render over a million quads

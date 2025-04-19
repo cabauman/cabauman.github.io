@@ -18,7 +18,7 @@ gallery:
     image_path: assets/images/breakout/screen03.png
 ---
 
-A Breakout clone made in 5 days with Unity and UniRx. This was a programming task given to me as part of the hiring process for a programmer position at a company.
+This is a Breakout clone made in 5 days with Unity and UniRx. It was a programming task assigned to me as part of the hiring process for a Unity software engineer position at a KidsLoop.
 
 [Source Code](https://github.com/cabauman/UnityBreakoutGame){: .btn .btn--info}
 

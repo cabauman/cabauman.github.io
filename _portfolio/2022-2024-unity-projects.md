@@ -4,7 +4,7 @@ excerpt: "2022-2024: Digital Twin & Industry Team"
 project_type: Professional
 classes: wide
 header:
-  teaser: /assets/images/unity-employment/unity-logo.svg
+  teaser: /assets/images/unity-employment/unity-logo-teaser.png
 sidebar:
   - image: /assets/images/unity-employment/unity-logo.svg
     text: "Aug 2022 - Apr 2024<br/>Accelerate Solutions team: build real-time 3D applications for Industry such as Automotive, Manufacturing, Retail, and Healthcare"
