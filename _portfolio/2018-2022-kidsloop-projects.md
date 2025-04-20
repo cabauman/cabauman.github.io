@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/kidsloop/kidsloop-logo.png
 sidebar:
   - image: /assets/images/kidsloop/kidsloop-logo.png
-    text: "Nov 2018 - Jul 2022"
+    text: "<p><b>Nov 2018 - Jul 2022</b></p><p><b>Mid/Senior Software Engineer</b></p><p><b>Educational Technology</b> - for parents, teachers, and children</p>"
 gallery:
   - url: /assets/images/kidsloop/esl-dashboard-summary.png
     image_path: assets/images/kidsloop/esl-dashboard-summary.png

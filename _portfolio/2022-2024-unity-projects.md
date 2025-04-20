@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/unity-employment/unity-logo-teaser.png
 sidebar:
   - image: /assets/images/unity-employment/unity-logo.svg
-    text: "Aug 2022 - Apr 2024<br/>Accelerate Solutions team: build real-time 3D applications for Industry such as Automotive, Manufacturing, Retail, and Healthcare"
+    text: "<p><b>Aug 2022 - Apr 2024</b></p><p><b>Senior Software Engineer</b></p><p><b>Experience Engineering Team</b> - build real-time 3D applications for industries such as Automotive, Manufacturing, Retail, and Healthcare</p>"
 gallery:
   - url: /assets/images/unity-employment/lg-meta-slap1.gif
     image_path: assets/images/unity-employment/lg-meta-slap1.gif
@@ -139,7 +139,8 @@ gallery:
 **Platform:** Windows<br />
 **Role:** Unity Engineer<br />
 **Engineers:** 3<br />
-**Description:** [Advanced Driver-Assistance System](https://en.wikipedia.org/wiki/Advanced_driver-assistance_system) | [Human-Machine Interface](https://en.wikipedia.org/wiki/User_interface)
+**Tags:** [Advanced Driver-Assistance System](https://en.wikipedia.org/wiki/Advanced_driver-assistance_system) | [Human-Machine Interface](https://en.wikipedia.org/wiki/User_interface)<br />
+**Description:** I joined this project at the halfway point to assist with editor tooling. You can find a lot more detailed information about phase 2 of this project [here](../2024-2025-capgemini-projects), where I was the lead engineer.
 
 **Notable Contributions:**
 - developed custom editor windows using both IMGUI and UI Toolkit
