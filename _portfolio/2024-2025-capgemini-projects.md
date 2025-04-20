@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/capgemini/capgemini_logo_teaser.png
 sidebar:
   - image: /assets/images/capgemini/capgemini_logo.png
-    text: "Aug 2024 - Apr 2025<br/>Experience Engineering team: build real-time 3D applications for Industry such as Automotive, Manufacturing, Retail, and Healthcare"
+    text: "<p><b>May 2024 - Apr 2025</b></p><p><b>Senior Software Engineer</b></p><p><b>Experience Engineering Team</b> - build real-time 3D applications for industries such as Automotive, Manufacturing, Retail, and Healthcare</p>"
 ---
 
 **NOTE:** The following client project has not been made public so I'm not able to include screenshots or videos.
@@ -32,11 +32,11 @@ The whole concept behind the runtime aspect of this project is to read ECU (elec
 
 **Definitions**
 
-CAN - Controller Area Network: a messaging-based protocol that enables electronic control units (ECUs) to communicate within a vehicle or other systems
+[CAN](https://en.wikipedia.org/wiki/CAN_bus) - Controller Area Network: a messaging-based protocol that enables electronic control units (ECUs) to communicate within a vehicle or other systems
 
 [Vector CANoe](https://www.vector.com/int/en/products/products-a-z/software/canoe/#): analysis and simulation tool for bus systems used in the automotive industry
 
-COM – Component Object Model: a standard defined by Microsoft for the communication between different software components. Different programming languages can be used to create such components. These components can be built by different software developers, independently from each other.
+[COM](https://en.wikipedia.org/wiki/Component_Object_Model) – Component Object Model: a standard defined by Microsoft for the communication between different software components. Different programming languages can be used to create such components. These components can be built by different software developers, independently from each other.
 
 CANoe COM Server: allows users to write their own applications or components that interface/interoperate with CANoe ([API Guide](https://cdn.vector.com/cms/content/know-how/_application-notes/AN-AND-1-117_CANoe_CANalyzer_as_a_COM_Server.pdf))
 
