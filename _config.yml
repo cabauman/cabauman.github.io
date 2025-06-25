@@ -64,7 +64,7 @@ author:
   name   : "Colt Bauman"
   avatar : "/assets/images/bio-photo.jpg"
   location : "South Korea"
-  bio    : "A minimalist developer with a passion for game development, performance optimization, test writing, IoC, source generators, etc."
+  bio    : "A minimalist developer with a passion for game development, 3D math, performance optimization, test writing, dependency injection, etc."
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
