@@ -2,6 +2,7 @@
 title: "Safety Survivor"
 excerpt: "2010-2012: A hotel safety committee game that I devleloped while working for hotel Loss Prevention"
 project_type: Semi-Professional
+date: 2010-01-01
 header:
   teaser: /assets/images/safetysurvivor/thumbs/safetysurvivor-footage1.jpg
 sidebar:

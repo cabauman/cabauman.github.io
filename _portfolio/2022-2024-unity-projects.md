@@ -3,6 +3,7 @@ title: "Projects at Unity Technologies"
 excerpt: "2022-2024: Digital Twin & Industry Team"
 project_type: Professional
 classes: wide
+date: 2022-08-01
 header:
   teaser: /assets/images/unity-employment/unity-logo-teaser.png
 sidebar:

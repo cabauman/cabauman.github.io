@@ -2,6 +2,7 @@
 title: "Breakout Clone"
 excerpt: "2018: job interview take-home assignment (5 days)"
 project_type: Personal
+github: https://github.com/cabauman/UnityBreakoutGame
 header:
   teaser: /assets/images/breakout/screen04.png
 sidebar:

@@ -2,6 +2,7 @@
 title: "Flashback"
 excerpt: "2012-2013: A memory game published to Google Play"
 project_type: Semi-Professional
+date: 2012-03-01
 header:
   teaser: /assets/images/flashback/thumbs/fb_sequencemode.gif
 sidebar:

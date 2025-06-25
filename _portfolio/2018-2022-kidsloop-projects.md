@@ -3,6 +3,7 @@ title: "KidsLoop Projects"
 excerpt: "2018-2022: Educational Technology company"
 project_type: Professional
 classes: wide
+date: 2018-11-01
 header:
   teaser: /assets/images/kidsloop/kidsloop-logo.png
 sidebar:
