@@ -3,6 +3,7 @@ title: "Projects at Capgemini Engineering"
 excerpt: "2024-2025: Digital Twin & Industry Team"
 project_type: Professional
 #classes: wide
+date: 2024-05-01
 header:
   teaser: /assets/images/capgemini/capgemini_logo_teaser.png
 sidebar:

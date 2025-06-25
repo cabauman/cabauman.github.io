@@ -2,6 +2,7 @@
 title: "Hotel Systems"
 excerpt: "2010-2012: Projects that I devleloped while working for hotel Loss Prevention"
 project_type: Semi-Professional
+date: 2010-01-01
 header:
   teaser: /assets/images/hotelsystems/lpdatabase2.png
 sidebar:

@@ -1,7 +1,9 @@
 ---
 title: "Fantasy Raiders"
-excerpt: "2016-2018: Open Adventure RPG game by Maverick Games released on Steam"
+excerpt: "<i class='fab fa-fw fa-github'>2016-2018: Open Adventure RPG game by Maverick Games released on Steam</i>"
 project_type: Professional
+date: 2016-03-01
+
 header:
   teaser: /assets/images/fantasy-raiders/fantasy_raiders00.jpg
 sidebar:
