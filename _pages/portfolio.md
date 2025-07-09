@@ -23,6 +23,7 @@ classes: wide
 
 <ul style="font-size: 75%; margin-bottom: 3em;">
   <li><a href="https://github.com/cabauman/UnityBreakoutGame">Unity Breakout Game</a> - a Breakout clone made in 5 days with Unity and UniRx; uses MVP pattern and declarative code</li>
+  <li><a href="https://github.com/cabauman/Unreal.PortfolioSandbox">Unreal Portfolio Sandbox</a> - a sandbox project for Unreal Engine 5; includes custom editor windows, CAN Signal plugin, data component system, UMG samples, etc.</li>
   <li><a href="https://github.com/cabauman/Unity.Logging">Unity.Logging</a> - a minimalist logging library with custom formatters; can strip from builds via scripting define symbol</li>
   <li><a href="https://github.com/cabauman/Unity.UITestKit">Unity.UITestKit</a> - utilities for writing uGUI Play Mode tests</li>
   <li><a href="/portfolio/open-source-contributions/">Open Source Contributions</a> - links to some of the notable GitHub PRs that I have made to open source repositories</li>
