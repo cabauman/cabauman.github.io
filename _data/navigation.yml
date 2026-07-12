@@ -1,17 +1,37 @@
-main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "Portfolio"
-    url: /portfolio/
-  - title: "About"
-    url: /about/
+en:
+  main:
+    - title: "Posts"
+      url: /posts/
+    - title: "Categories"
+      url: /categories/
+    - title: "Tags"
+      url: /tags/
+    - title: "Portfolio"
+      url: /portfolio/
+    - title: "About"
+      url: /about/
 
-portfolio:
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /portfolio/stylesheets/
+  portfolio:
+    - title: Extras
+      children:
+        - title: "Stylesheets"
+          url: /portfolio/stylesheets/
+
+ko:
+  main:
+    - title: "포스트"
+      url: /ko/posts/
+    - title: "카테고리"
+      url: /ko/categories/
+    - title: "태그"
+      url: /ko/tags/
+    - title: "포트폴리오"
+      url: /ko/portfolio/
+    - title: "소개"
+      url: /ko/about/
+
+  portfolio:
+    - title: 추가 항목
+      children:
+        - title: "스타일시트"
+          url: /ko/portfolio/stylesheets/

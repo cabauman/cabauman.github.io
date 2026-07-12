@@ -1,0 +1,57 @@
+{% assign active_lang = site.active_lang | default: site.default_lang | default: "en" %}
+{% unless site.languages and site.languages contains active_lang %}
+  {% assign current_path = page.url | default: "/" %}
+  {% assign path_segments = current_path | split: "/" %}
+  {% assign first_segment = path_segments[1] %}
+  {% if site.languages and site.languages contains first_segment %}
+    {% assign active_lang = first_segment %}
+  {% endif %}
+{% endunless %}
+{% assign home_url = "/" %}
+{% if site.languages and site.languages contains active_lang and active_lang != site.default_lang %}
+  {% assign home_url = "/" | append: active_lang | append: "/" %}
+{% endif %}
+
+{% assign nav_items = site.data.navigation[active_lang].main %}
+{% if nav_items == nil %}
+  {% assign nav_items = site.data.navigation.main %}
+{% endif %}
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        {% if site.logo %}
+          <a class="site-logo" href="{{ home_url | relative_url }}"><img src="{{ site.logo | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+        {% endif %}
+
+        <a class="site-title" href="{{ home_url | relative_url }}">
+          {{ site.masthead_title | default: site.title }}
+          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+        </a>
+
+        <ul class="visible-links">
+          {% for link in nav_items %}
+            <li class="masthead__menu-item">
+              <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+          {% include language-switcher.html context="nav" %}
+        </ul>
+
+        {% if site.search == true %}
+          <button class="search__toggle" type="button">
+            <span class="visually-hidden">Toggle search</span>
+            <i class="fas fa-search"></i>
+          </button>
+        {% endif %}
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
