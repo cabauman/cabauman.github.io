@@ -52,6 +52,7 @@ include:
 
 # Plugins (previously gems:)
 plugins:
+  - jekyll-polyglot
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -59,6 +60,17 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-target-blank
+
+languages: ["en", "ko"]
+default_lang: "en"
+exclude_from_localization:
+  - assets
+  - .github
+  - _site
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+parallel_localization: false
 
 author:
   name   : "Colt Bauman"
@@ -110,6 +122,7 @@ defaults:
       path: ""
       type: posts
     values:
+      lang: en
       layout: single
       author_profile: true
       read_time: true
@@ -121,6 +134,7 @@ defaults:
       path: "_pages"
       type: pages
     values:
+      lang: en
       layout: single
       author_profile: true
   # _portfolio
@@ -128,6 +142,7 @@ defaults:
       path: ""
       type: portfolio
     values:
+      lang: en
       layout: single
       author_profile: false
       share: true

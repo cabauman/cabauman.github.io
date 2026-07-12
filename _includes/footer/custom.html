@@ -1,0 +1,56 @@
+<!-- start custom footer snippets -->
+{% include language-switcher.html context="footer" %}
+
+<style>
+  .language-switcher {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .masthead__menu-item--lang a[aria-current="page"],
+  .language-switcher a[aria-current="page"] {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  (function () {
+    var links = document.querySelectorAll('.js-lang-link[data-lang]');
+    if (!links.length) {
+      return;
+    }
+
+    var langs = [{% for lang in site.languages %}'{{ lang }}'{% unless forloop.last %}, {% endunless %}{% endfor %}];
+    var path = window.location.pathname || '/';
+    var pieces = path.split('/').filter(Boolean);
+    var first = pieces.length ? pieces[0] : '';
+    var defaultLang = '{{ site.default_lang | default: "en" }}';
+    var hasLangPrefix = langs.indexOf(first) >= 0;
+    var active = hasLangPrefix ? first : defaultLang;
+    var suffixParts = hasLangPrefix ? pieces.slice(1) : pieces;
+    var suffix = suffixParts.length ? '/' + suffixParts.join('/') : '/';
+
+    // Keep directory-style links for Jekyll pages and avoid trailing slash on files.
+    if (suffix !== '/' && suffix.indexOf('.') < 0 && !suffix.endsWith('/')) {
+      suffix += '/';
+    }
+
+    links.forEach(function (link) {
+      var lang = link.getAttribute('data-lang');
+      var langPrefix = lang === defaultLang ? '' : '/' + lang;
+      var target = langPrefix + (suffix === '/' ? '/' : suffix);
+      if (!target.startsWith('/')) {
+        target = '/' + target;
+      }
+
+      link.setAttribute('href', target);
+      if (lang === active) {
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  })();
+</script>
+<!-- end custom footer snippets -->
