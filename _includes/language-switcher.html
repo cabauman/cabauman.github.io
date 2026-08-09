@@ -2,9 +2,11 @@
 {% if langs and langs.size > 1 %}
   {% if include.context == "nav" %}
     <li class="masthead__menu-item masthead__menu-item--lang">
-      {% for lang in langs %}
-        <a class="js-lang-link" data-lang="{{ lang }}" href="{{ '/' | append: lang | append: '/' | relative_url }}">{{ lang | upcase }}</a>{% unless forloop.last %}<span aria-hidden="true"> / </span>{% endunless %}
-      {% endfor %}
+      <span class="lang-switch">
+        {% for lang in langs %}
+          <a style="margin:0px 6px" class="js-lang-link" data-lang="{{ lang }}" href="{{ '/' | append: lang | append: '/' | relative_url }}">{{ lang | upcase }}</a>{% unless forloop.last %}<span aria-hidden="true"> | </span>{% endunless %}
+        {% endfor %}
+      </span>
     </li>
   {% else %}
     <div class="language-switcher language-switcher--footer">
