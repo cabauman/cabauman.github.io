@@ -1,6 +1,6 @@
 ---
 title: "Fantasy Raiders"
-excerpt: "<i class='fab fa-fw fa-github'>2016-2018: Maverick Games의 오픈 어드벤처 RPG 게임 (Steam 출시)</i>"
+excerpt: "<i class='fab fa-fw fa-github'>2016-2018: 오픈 어드벤처 RPG 게임 (Steam 출시)</i>"
 project_type: Professional
 date: 2016-03-01
 lang: ko

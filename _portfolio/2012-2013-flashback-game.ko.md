@@ -1,7 +1,7 @@
 ---
 title: "Flashback"
 excerpt: "2012-2013: Google Play에 출시한 메모리 게임"
-project_type: Semi-Professional
+project_type: Personal
 date: 2012-03-01
 lang: ko
 permalink: /portfolio/2012-2013-flashback-game/

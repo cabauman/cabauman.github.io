@@ -1,5 +1,5 @@
 ---
-title: "KidsLoop Projects"
+title: "Projects at KidsLoop"
 excerpt: "2018-2022: Educational Technology company"
 project_type: Professional
 classes: wide
