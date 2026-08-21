@@ -54,8 +54,14 @@ UnTANKable is a single-player time-attack arena tank shooter. Clear each stage b
 
 I developed this game as a solo developer while working at Sevenline Labs.
 - Published to Steam, the Epic Games Store, and Itch.io.
-- Utilizes Unity cloud services including Leaderboards, Cloud Save, Cloud Code, Economy, Remote Config, and Analytics.
-- Uses Google, Steam, and Epic Games with Unity Authentication.
+- Utilizes Unity Gaming Services (UGS) including Leaderboards, Cloud Save, Cloud Code, Economy, Remote Config, and Analytics.
+- Uses Unity Authentication with Google, Steam, and Epic Games providers.
+- Implemented [Environment Query System (EQS)](https://dev.epicgames.com/documentation/unreal-engine/environment-query-system-in-unreal-engine) for enemy tank navigation.
+- Implemented [Utility AI](https://shaggydev.com/2023/04/19/utility-ai/) for enemy tank decision-making e.g. attack, retreat, heal ally, etc.
+- Utilizes Cloud Code for server-authoritative game logic e.g. tank part upgrades, selling, gold rewards, leaderboard score submission, etc.
+- Event-driven decoupling through central gameplay events
+- Service abstraction with mock/UGS swappable backends
+- Data-driven design for enemy archetypes and ability system
 
 ## Core Features
 - 2 chapters containing 30 stages each: grassland and dungeon themes
@@ -74,6 +80,8 @@ I developed this game as a solo developer while working at Sevenline Labs.
 - Mint and redeem tank part NFTs using an the ForTem API.
 
 [Steam Page](https://store.steampowered.com/app/4713920/UnTANKable/){: .btn .btn--info}
+
+[Epic Games Store Page](https://store.epicgames.com/p/untankable-a34ce1){: .btn .btn--info}
 
 {% include video id="iTgX6OUqFO4" provider="youtube" %}
 

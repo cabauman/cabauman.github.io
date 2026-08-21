@@ -4,6 +4,7 @@ excerpt: "<i class='fab fa-fw fa-github'>2026: 타임어택 아케이드 탱크 
 project_type: Professional
 date: 2026-01-01
 lang: ko
+permalink: /portfolio/2026-untankable-game/
 
 header:
   teaser: /assets/images/untankable/untankable00.jpg
@@ -57,6 +58,12 @@ Sevenline Labs에서 근무하며 1인 개발자로 이 게임을 개발했습�
 - Steam, Epic Games Store, Itch.io에 출시되었습니다.
 - Leaderboards, Cloud Save, Cloud Code, Economy, Remote Config, Analytics 등 Unity 클라우드 서비스를 활용합니다.
 - Unity Authentication과 함께 Google, Steam, Epic Games 로그인을 사용합니다.
+- 적 전차 내비게이션에 [Environment Query System(EQS)을](https://iiii4.tistory.com/193) 구현했습니다.
+- 적 전차의 공격, 후퇴, 아군 치료 등의 의사 결정에 [Utility AI를](https://shaggydev.com/2023/04/19/utility-ai/) 구현했습니다.
+- 전차 부품 업그레이드, 판매, 골드 보상, 리더보드 점수 제출 등 서버 권한이 필요한 게임 로직에 Cloud Code를 활용합니다.
+- 중앙 게임플레이 이벤트를 통한 이벤트 기반 디커플링을 구현했습니다.
+- 모의 백엔드와 UGS 백엔드를 교체할 수 있도록 서비스를 추상화했습니다.
+- 적 전차 아키타입과 능력 시스템을 데이터 기반으로 설계했습니다.
 
 ## 주요 기능
 - 각 30개 스테이지로 구성된 2개 챕터: 초원 및 던전 테마
@@ -75,6 +82,8 @@ Sevenline Labs에서 근무하며 1인 개발자로 이 게임을 개발했습�
 - ForTem API를 이용한 전차 부품 NFT 민팅 및 리딤
 
 [Steam 페이지](https://store.steampowered.com/app/4713920/UnTANKable/){: .btn .btn--info}
+
+[Epic Games Store 페이지](https://store.epicgames.com/p/untankable-a34ce1){: .btn .btn--info}
 
 {% include video id="iTgX6OUqFO4" provider="youtube" %}
 
