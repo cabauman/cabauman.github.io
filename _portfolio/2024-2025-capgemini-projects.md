@@ -4,15 +4,23 @@ excerpt: "2024-2025: Digital Twin & Industry Team"
 project_type: Professional
 #classes: wide
 date: 2024-05-01
+github: https://github.com/cabauman/Unreal.PortfolioSandbox
 header:
   teaser: /assets/images/capgemini/capgemini_logo_teaser.png
 sidebar:
   - image: /assets/images/capgemini/capgemini_logo.png
     text: "<p><b>May 2024 - Apr 2025</b></p><p><b>Senior Software Engineer</b></p><p><b>Experience Engineering Team</b> - build real-time 3D applications for industries such as Automotive, Manufacturing, Retail, and Healthcare</p>"
+gallery:
+  - url: /assets/images/capgemini/custom_editor1.png
+    image_path: assets/images/capgemini/custom_editor1.png
+  - url: /assets/images/capgemini/custom_editor2.png
+    image_path: assets/images/capgemini/custom_editor2.png
 ---
 
-**NOTE:** The following client project has not been made public so I'm not able to include screenshots or videos.
+This project was for a client, so the screenshots and source code are from a stripped down version of the actual project.
 {: .notice--info}
+
+[Source Code](https://github.com/cabauman/Unreal.PortfolioSandbox){: .btn .btn--info}
 
 ## ADAS HMI Project
 
@@ -25,7 +33,7 @@ sidebar:
 
 **Background**
 
-This project is the second phase of the one we worked on at Unity Technologies (before our team was sold to Capgemini). Phase 1 was developed with Unity but for phase 2 the client required a port to Unreal Engine. I was the only engineer at the time and hadn't used Unreal Engine since university. So, while contract agreement details were being worked out I focused on quickly getting reacquainted with Unreal and C++. My first task was basically to create a clone of the Unity project in Unreal. The target delivery of both phases is the editor project (not a build), so in addition to runtime features, custom editor tooling is also required. About four months later an another engineer joined me on the project.
+This project is the second phase of the one I worked on at Unity Technologies. Phase 1 was developed with Unity but for phase 2 the client required a port to Unreal Engine. I was the only engineer at the time and hadn't used Unreal Engine since university. So, while contract agreement details were being worked out I focused on quickly getting reacquainted with Unreal and C++. My first task was basically to create a clone of the Unity project in Unreal. The target delivery of both phases is the editor project (not a build), so in addition to runtime features, custom editor tooling is also required. About four months later an another engineer joined me on the project.
 
 **Summary**
 
@@ -72,3 +80,5 @@ Estimated C++ vs Blueprint usage: 80% - 20%
 - created an Unreal Plugin for the C++ COM API integration
 - abstracted the CANoe API behind an interface so we're able to use a mock implementation when we don't have access to the CANoe software
 - used pooling for Widgets and Actors
+
+{% include gallery %}

@@ -4,6 +4,7 @@ excerpt: "2024-2025: Digital Twin & Industry 팀"
 project_type: Professional
 #classes: wide
 date: 2024-05-01
+github: https://github.com/cabauman/Unreal.PortfolioSandbox
 lang: ko
 permalink: /portfolio/2024-2025-capgemini-projects/
 header:
@@ -11,10 +12,17 @@ header:
 sidebar:
   - image: /assets/images/capgemini/capgemini_logo.png
     text: "<p><b>2024년 5월 - 2025년 4월</b></p><p><b>시니어 소프트웨어 엔지니어</b></p><p><b>Experience Engineering Team</b> - 자동차, 제조, 리테일, 헬스케어 등 산업군을 위한 실시간 3D 애플리케이션 개발</p>"
+gallery:
+  - url: /assets/images/capgemini/custom_editor1.png
+    image_path: assets/images/capgemini/custom_editor1.png
+  - url: /assets/images/capgemini/custom_editor2.png
+    image_path: assets/images/capgemini/custom_editor2.png
 ---
 
-**참고:** 아래 클라이언트 프로젝트는 공개되지 않아 스크린샷/영상을 포함할 수 없습니다.
+이 프로젝트는 클라이언트 작업이었기 때문에, 스크린샷과 소스 코드는 실제 프로젝트에서 일부 기능을 제거한 버전에서 가져온 것입니다.
 {: .notice--info}
+
+[소스 코드](https://github.com/cabauman/Unreal.PortfolioSandbox){: .btn .btn--info}
 
 ## ADAS HMI 프로젝트
 
@@ -74,3 +82,5 @@ AsyncTask(ENamedThreads::AnyThread, [this, OnCompleted]()
 - C++ COM API 통합용 Unreal Plugin 제작
 - CANoe API를 인터페이스 뒤로 추상화하여 CANoe 소프트웨어 접근이 없을 때 mock 구현으로 대체 가능하도록 설계
 - Widget 및 Actor 풀링 적용
+
+{% include gallery %}
