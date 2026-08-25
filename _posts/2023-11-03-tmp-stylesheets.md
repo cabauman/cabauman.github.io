@@ -4,7 +4,6 @@ categories:
   - Unity Tips
 tags:
   - unity
-  - unity-tip
 ---
 
 Use TextMeshPro's "Font Weights" feature + stylesheets to simplify working with specs set by the design team.

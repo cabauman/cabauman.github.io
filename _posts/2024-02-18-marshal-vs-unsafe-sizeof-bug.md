@@ -3,7 +3,7 @@ title: "Resolving a Bug Related to 'Marshal.SizeOf<T> vs Unsafe.SizeOf<T>'"
 categories:
   - Code Journal
 tags:
-  - C#
+  - c#
   - unsafe code
   - unmanaged structs
   - sizeof
