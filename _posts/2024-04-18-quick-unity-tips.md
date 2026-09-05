@@ -5,6 +5,7 @@ categories:
   - Unity Tips
 tags:
   - unity
+toc: true
 ---
 
 ## Image Click Area
@@ -21,17 +22,25 @@ C# 9 introduced the init keyword which can be applied to properties and indexers
 
 The compiler complains about missing something called IsExternalInit. If you search online, you'll find a small snippet of code that you can add to your project to fill in the missing piece.
 
-![Image Click Area](/assets/images/unitytip-init2.png)
+```csharp
+using System.ComponentModel;
+
+namespace System.Runtime.CompilerServices
+{
+    [EditorBrowsable(EditorBrowsableState.Never)]
+    public class IsExternalInit{}
+}
+```
 
 Of course, MonoBehaviours can't benefit from this feature, but still a lot of use cases. Immutable properties ftw!
 
 [init keyword docs](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/init){:target="_blank"}
 
-[IsExternalInit snippet](https://stackoverflow.com/questions/62648189/testing-c-sharp-9-0-in-vs2019-cs0518-isexternalinit-is-not-defined-or-imported/62656145#62656145){:target="_blank"}
-
 ![Image Click Area](/assets/images/unitytip-init3.png)
 
-##
+## CallerArgumentExpression Attribute
+
+The CallerArgumentExpression attribute allows us to capture the expression passed to a method parameter as a string. This is particularly useful for argument validation, as it lets us automatically include the parameter name in exception messages without manually specifying it.
 
 ```csharp
 [AttributeUsage(AttributeTargets.Parameter, AllowMultiple = false, Inherited = false)]
@@ -42,15 +51,26 @@ public class CallerArgumentExpressionAttribute : Attribute
 }
 ```
 
-asdf
+Example usage:
 
 ```csharp
-public static void NotNull([NotNull] object? obj, [CallerArgumentExpression("obj")] string paramName = "")
+public static class Ensure
 {
-    if (obj == null)
+    public static void NotNull([NotNull] object? obj, [CallerArgumentExpression("obj")] string paramName = "")
     {
-        throw new ArgumentNullException(paramName);
+        if (obj == null)
+        {
+            throw new ArgumentNullException(paramName);
+        }
     }
+}
+
+...
+
+[SerializeField] private TextMeshProUGUI _scoreText;
+private void Awake()
+{
+    Ensure.NotNull(_scoreText);
 }
 ```
 
@@ -91,7 +111,7 @@ private void OnEnable()
     _myClass = GenericPool<MyClass>.Get();
 }
 
-private int OnDisable()
+private void OnDisable()
 {
     GenericPool<MyClass>.Release(_myClass);
 }
@@ -111,7 +131,7 @@ public int DoSomeWork()
 
 ## Custom Script Templates
 
-You may already know about the script templates folder [in the installation directory](https://support.unity.com/hc/en-us/articles/210223733-How-to-customize-Unity-script-templates){:target="_blank"}, but did you also know that "ScriptTemplates" is a special folder name in a Unity project?
+In addition to the script templates folder [in the installation directory](https://support.unity.com/hc/en-us/articles/210223733-How-to-customize-Unity-script-templates){:target="_blank"}, you can also place custom templates in a "ScriptTemplates" folder within your Unity project. _It has to be located at the root of your Assets folder._
 
 ![script-template1](/assets/images/script-template1.png)
 
