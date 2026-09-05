@@ -5,6 +5,9 @@ tags:
   - c#
 ---
 
+https://gist.github.com/unitycoder/884e1f6d9badca827f659fcf69086775
+https://github.com/Unity-Technologies/UnityCsReference/blob/master/Runtime/Export/NativeArray/NativeArray.cs
+
 I recently came across some NativeArray sorting experiments online that utilize the Unity job system and burst compiler. As I was reviewing the code, I noticed a potential performance trap related to the `in` keyword in C#. The input array parameter `a` is passed by readonly reference because there's no intention to modify it within the method.
 
 ```csharp
