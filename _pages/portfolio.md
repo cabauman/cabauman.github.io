@@ -5,7 +5,6 @@ permalink: /portfolio/
 collection: portfolio
 project_types:
   - Professional
-  - Semi-Professional
   - Personal
   - University
 entries_layout: grid
@@ -15,9 +14,6 @@ classes: wide
 #sidebar:
 #nav: portfolio
 ---
-
-**NOTE:** This portfolio section is a work-in-progress
-{: .notice--info}
 
 <h2 style="margin-top: 0.2em"><i class="fab fa-github"></i> Code Samples</h2>
 
